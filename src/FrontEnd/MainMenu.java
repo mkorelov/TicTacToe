@@ -24,9 +24,13 @@ class MainMenu extends VBox {
         this.setPrefSize(800, 750);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
-        String defaultButtonStyle = "-fx-font-style: italic; -fx-background-color: #FFFFFF;  -fx-font-weight: bold; -fx-font: 11 arial;";
+        //String defaultButtonStyle = "-fx-font-style: italic; -fx-background-color: #FFFFFF;  -fx-font-weight: bold; -fx-font: 11 arial;";
         startButton = new Button("Start Game");
-        startButton.setStyle(defaultButtonStyle);
+        startButton.setPrefHeight(300);
+        startButton.setPrefWidth(300);
+        Font font = new Font(45);
+        startButton.setFont(font);
+        //startButton.setStyle(defaultButtonStyle);
 
         this.getChildren().add(startButton);
         this.setAlignment(Pos.CENTER);
@@ -37,7 +41,7 @@ class MainMenuHeader extends HBox {
     MainMenuHeader() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
-        Text titleText = new Text("TicTacToe");
+        Text titleText = new Text("Tic-Tac-Toe");
         titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
         this.getChildren().add(titleText);
         this.setAlignment(Pos.CENTER);
@@ -48,7 +52,7 @@ class MainMenuFooter extends HBox {
     MainMenuFooter() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
-        Text titleText = new Text("TicTacToe");
+        Text titleText = new Text("Tic-Tac-Toe");
         titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
         this.getChildren().add(titleText);
         this.setAlignment(Pos.CENTER);
