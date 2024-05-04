@@ -1,6 +1,23 @@
 ## TicTacToe
 
-This is my implementation of Tic-Tac-Toe using Java & JavaFX.
+This is my implementation of Tic-Tac-Toe using Java & JavaFX. 
+
+Version 1 Features:
+1. Launching the app opens the Main Menu where you can start a new game
+2. Implement the game and logic behind it
+3. When the game ends it returns you to Main Menu
+
+Version 2 Features:
+- Add pause menu while in a game that allows you to return to the main menu
+- Allow selection of names instead of player 1 and player 2
+- Add a score and allow you to play again with same settings
+
+Version 3 Features:
+- Add option to view rules from Main Menu
+- Add an option to save a game and load it
+
+Version 4 Features:
+- Add a leaderboard or stats based on the name chosen
 
 Features:
 1. UI (Game Board, Tiles, Xs/Os, Title of Game, Player One/Two, Score, etc.)
