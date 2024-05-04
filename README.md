@@ -17,6 +17,7 @@ Version 3 Features:
 - Add an option to save a game and load it
 
 Version 4 Features:
+- Imporve UI
 - Add a leaderboard or stats based on the name chosen
 
 Features:
