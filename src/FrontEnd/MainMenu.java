@@ -35,6 +35,10 @@ class MainMenu extends VBox {
         this.getChildren().add(startButton);
         this.setAlignment(Pos.CENTER);
     }
+
+    Button getStartButton() {
+        return this.startButton;
+    }
 }
 
 class MainMenuHeader extends HBox {
@@ -64,6 +68,8 @@ class MainMenuFrame extends BorderPane {
     private MainMenuFooter footer;
     private MainMenu menu;
 
+    private Button startButton;
+
     MainMenuFrame() {
         header = new MainMenuHeader();
         footer = new MainMenuFooter();
@@ -73,10 +79,21 @@ class MainMenuFrame extends BorderPane {
         this.setCenter(menu);
         this.setBottom(footer);
 
+        startButton = menu.getStartButton();
+
         addListeners();
     }
 
     public void addListeners() {
+        startButton.setOnAction(e -> {
+            Stage currStage = (Stage) startButton.getScene().getWindow();
 
+            GameBoardFrame root = new GameBoardFrame();
+
+            currStage.setTitle("Tic-Tac-Toe App");
+            currStage.setScene(new Scene(root, 700, 700));
+            currStage.setResizable(false);
+            currStage.show();
+        });
     }
 }
