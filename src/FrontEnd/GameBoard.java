@@ -16,17 +16,17 @@ import javafx.scene.text.*;
 class GameBoard extends VBox {
     private GridPane board;
 
-    private Button lt;
-    private Button mt;
-    private Button rt;
+    private Button lt;  // left top box
+    private Button mt;  // middle top box
+    private Button rt;  // right top box
 
-    private Button lm;
-    private Button mm;
-    private Button rm;
+    private Button lm;  // left middle box
+    private Button mm;  // middle middle box
+    private Button rm;  // right middle box
 
-    private Button lb;
-    private Button mb;
-    private Button rb;
+    private Button lb;  // left bottom box
+    private Button mb;  // middle bottom box
+    private Button rb;  // right bottom box
 
     GameBoard() {
         this.setPrefSize(800, 750);
@@ -91,10 +91,44 @@ class GameBoard extends VBox {
 
         board.setAlignment(Pos.CENTER);
 
-        //board.getChildren().addAll(lt, mt, rt, lm, mm, rm, lb, mb, rb);
-
         this.getChildren().add(board);
         this.setAlignment(Pos.CENTER);
+    }
+
+    Button getLTButton() {
+        return this.lt;
+    }
+
+    Button getMTButton() {
+        return this.mt;
+    }
+
+    Button getRTButton() {
+        return this.rt;
+    }
+
+    Button getLMButton() {
+        return this.lm;
+    }
+
+    Button getMMButton() {
+        return this.mm;
+    }
+
+    Button getRMButton() {
+        return this.rm;
+    }
+
+    Button getLBButton() {
+        return this.lb;
+    }
+
+    Button getMBButton() {
+        return this.mb;
+    }
+
+    Button getRBButton() {
+        return this.rb;
     }
 }
 
@@ -128,6 +162,16 @@ class GameBoardFrame extends BorderPane {
     private GameBoardFooter footer;
     private GameBoard board;
 
+    private Button lt;
+    private Button mt;
+    private Button rt;
+    private Button lm;
+    private Button mm;
+    private Button rm;
+    private Button lb;
+    private Button mb;
+    private Button rb;
+
     GameBoardFrame() {
         header = new GameBoardHeader();
         footer = new GameBoardFooter();
@@ -137,10 +181,45 @@ class GameBoardFrame extends BorderPane {
         this.setCenter(board);
         this.setBottom(footer);
 
+        lt = board.getLTButton();
+        mt = board.getMTButton();
+        rt = board.getRTButton();
+        lm = board.getLMButton();
+        mm = board.getMMButton();
+        rm = board.getRMButton();
+        lb = board.getLBButton();
+        mb = board.getMBButton();
+        rb = board.getRBButton();
+
         addListeners();
     }
 
     public void addListeners() {
+        lt.setOnAction(e -> {
+        });
 
+        mt.setOnAction(e -> {
+        });
+
+        rt.setOnAction(e -> {
+        });
+
+        lm.setOnAction(e -> {
+        });
+
+        mm.setOnAction(e -> {
+        });
+
+        rm.setOnAction(e -> {
+        });
+
+        lb.setOnAction(e -> {
+        });
+
+        mb.setOnAction(e -> {
+        });
+        
+        rb.setOnAction(e -> {
+        });
     }
 }
