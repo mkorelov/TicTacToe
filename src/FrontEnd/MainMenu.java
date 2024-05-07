@@ -24,13 +24,11 @@ class MainMenu extends VBox {
         this.setPrefSize(800, 750);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
-        //String defaultButtonStyle = "-fx-font-style: italic; -fx-background-color: #FFFFFF;  -fx-font-weight: bold; -fx-font: 11 arial;";
         startButton = new Button("Start Game");
         startButton.setPrefHeight(300);
         startButton.setPrefWidth(300);
         Font font = new Font(45);
         startButton.setFont(font);
-        //startButton.setStyle(defaultButtonStyle);
 
         this.getChildren().add(startButton);
         this.setAlignment(Pos.CENTER);
