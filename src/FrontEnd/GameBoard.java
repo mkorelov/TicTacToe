@@ -1,5 +1,7 @@
 package FrontEnd;
 
+import BackEnd.Game;
+
 import javafx.geometry.Pos;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -162,6 +164,8 @@ class GameBoardFrame extends BorderPane {
     private GameBoardFooter footer;
     private GameBoard board;
 
+    private Game game;
+
     private Button lt;
     private Button mt;
     private Button rt;
@@ -181,6 +185,8 @@ class GameBoardFrame extends BorderPane {
         this.setCenter(board);
         this.setBottom(footer);
 
+        game = new Game();
+
         lt = board.getLTButton();
         mt = board.getMTButton();
         rt = board.getRTButton();
@@ -196,30 +202,39 @@ class GameBoardFrame extends BorderPane {
 
     public void addListeners() {
         lt.setOnAction(e -> {
+            lt.setText(game.move(0));
         });
 
         mt.setOnAction(e -> {
+            mt.setText(game.move(1));
         });
 
         rt.setOnAction(e -> {
+            rt.setText(game.move(2));
         });
 
         lm.setOnAction(e -> {
+            lm.setText(game.move(3));
         });
 
         mm.setOnAction(e -> {
+            mm.setText(game.move(4));
         });
 
         rm.setOnAction(e -> {
+            rm.setText(game.move(5));
         });
 
         lb.setOnAction(e -> {
+            lb.setText(game.move(6));
         });
 
         mb.setOnAction(e -> {
+            mb.setText(game.move(7));
         });
         
         rb.setOnAction(e -> {
+            rb.setText(game.move(8));
         });
     }
 }
