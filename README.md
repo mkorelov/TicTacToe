@@ -11,6 +11,7 @@ Version 2 Features:
 - Add pause menu while in a game that allows you to return to the main menu
 - Allow selection of names instead of player 1 and player 2
 - Add a score and allow you to play again with same settings
+- Show winning screen and allow play agian or return to main menu
 
 Version 3 Features:
 - Add option to view rules from Main Menu

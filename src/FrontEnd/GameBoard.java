@@ -202,39 +202,138 @@ class GameBoardFrame extends BorderPane {
 
     public void addListeners() {
         lt.setOnAction(e -> {
-            lt.setText(game.move(0));
+            String str = game.move(0);
+            if (!str.equals("")) {
+                lt.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
 
         mt.setOnAction(e -> {
-            mt.setText(game.move(1));
+            String str = game.move(1);
+            if (!str.equals("")) {
+                mt.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
 
         rt.setOnAction(e -> {
-            rt.setText(game.move(2));
+            String str = game.move(2);
+            if (!str.equals("")) {
+                rt.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
 
         lm.setOnAction(e -> {
-            lm.setText(game.move(3));
+            String str = game.move(3);
+            if (!str.equals("")) {
+                lm.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
 
         mm.setOnAction(e -> {
-            mm.setText(game.move(4));
+            String str = game.move(4);
+            if (!str.equals("")) {
+                mm.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
 
         rm.setOnAction(e -> {
-            rm.setText(game.move(5));
+            String str = game.move(5);
+            if (!str.equals("")) {
+                rm.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
 
         lb.setOnAction(e -> {
-            lb.setText(game.move(6));
+            String str = game.move(6);
+            if (!str.equals("")) {
+                lb.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
 
         mb.setOnAction(e -> {
-            mb.setText(game.move(7));
+            String str = game.move(7);
+            if (!str.equals("")) {
+                mb.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
         
         rb.setOnAction(e -> {
-            rb.setText(game.move(8));
+            String str = game.move(8);
+            if (!str.equals("")) {
+                rb.setText(str);
+            }
+            if (game.gameOver() == true) {
+                Stage currStage = (Stage) lt.getScene().getWindow();
+                MainMenuFrame root = new MainMenuFrame();
+                currStage.setTitle("Tic-Tac-Toe App");
+                currStage.setScene(new Scene(root, 700, 700));
+                currStage.setResizable(false);
+                currStage.show();
+            }
         });
     }
 }
