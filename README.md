@@ -3,14 +3,15 @@
 This is my implementation of Tic-Tac-Toe using Java & JavaFX. 
 
 Version 1 Features:
-1. Launching the app opens the Main Menu where you can start a new game
-2. Implement the game and logic behind it
-3. When the game ends it returns you to Main Menu
+1. Launching the app opens the Main Menu where you can start a new game (Done)
+2. Implement the game and logic behind it (Done)
+3. When the game ends it returns you to Main Menu (Done)
 
 Version 2 Features:
+- Indicate which players turn it is
 - Add pause menu while in a game that allows you to return to the main menu
 - Allow selection of names instead of player 1 and player 2
-- Add a score and allow you to play again with same settings
+- Add a score next to names in footer and allow you to play again with same settings
 - Show winning screen and allow play agian or return to main menu
 
 Version 3 Features:
