@@ -1,6 +1,5 @@
 package BackEnd;
 
-// Create new game when start game button is clicked and add game logic via methods that can be called after each move
 public class Game {
     private int[] arr;
     private int turn;   // 0 : X and 1 : O
@@ -31,7 +30,7 @@ public class Game {
 
     public boolean gameOver() {
 
-        // if all blocks are full and no more moves
+        // if all blocks are full
         if (moves == 9) {
             return true;
         }

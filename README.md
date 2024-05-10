@@ -8,18 +8,18 @@ Version 1 Features:
 3. When the game ends it returns you to Main Menu (Done)
 
 Version 2 Features:
-- Indicate which players turn it is
 - Add pause menu while in a game that allows you to return to the main menu
 - Allow selection of names instead of player 1 and player 2
-- Add a score next to names in footer and allow you to play again with same settings
+- Indicate which players turn it is
+- Add a score next to names in footer
 - Show winning screen and allow play agian or return to main menu
 
 Version 3 Features:
 - Add option to view rules from Main Menu
-- Add an option to save a game and load it
+- Add an option to save a game and load it (from a file)
 
 Version 4 Features:
-- Imporve UI
+- Improve UI
 - Add a leaderboard or stats based on the name chosen
 
 Features:

@@ -88,7 +88,7 @@ class MainMenuFrame extends BorderPane {
 
             GameBoardFrame root = new GameBoardFrame();
 
-            currStage.setTitle("Tic-Tac-Toe App");
+            currStage.setTitle("Tic-Tac-Toe");
             currStage.setScene(new Scene(root, 700, 700));
             currStage.setResizable(false);
             currStage.show();

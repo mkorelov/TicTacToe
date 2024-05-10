@@ -146,6 +146,10 @@ class GameBoardHeader extends HBox {
         this.getChildren().addAll(titleText, pauseButton);
         this.setAlignment(Pos.CENTER);
     }
+
+    Button getPauseButton() {
+        return this.pauseButton;
+    }
 }
 
 class GameBoardFooter extends HBox {
@@ -165,6 +169,8 @@ class GameBoardFrame extends BorderPane {
     private GameBoard board;
 
     private Game game;
+
+    private Button pauseButton;
 
     private Button lt;
     private Button mt;
@@ -187,6 +193,8 @@ class GameBoardFrame extends BorderPane {
 
         game = new Game();
 
+        pauseButton = header.getPauseButton();
+
         lt = board.getLTButton();
         mt = board.getMTButton();
         rt = board.getRTButton();
@@ -201,6 +209,15 @@ class GameBoardFrame extends BorderPane {
     }
 
     public void addListeners() {
+        pauseButton.setOnAction(e -> {
+            Stage newStage = new Stage();
+            PauseMenuFrame root = new PauseMenuFrame();
+            newStage.setTitle("Pause Menu");
+            newStage.setScene(new Scene(root, 300, 300));
+            newStage.setResizable(false);
+            newStage.show();
+        });
+
         lt.setOnAction(e -> {
             String str = game.move(0);
             if (!str.equals("")) {
