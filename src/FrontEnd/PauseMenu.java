@@ -60,7 +60,12 @@ class PauseMenuHeader extends HBox {
 
 class PauseMenuFooter extends HBox {
     PauseMenuFooter() {
-
+        this.setPrefSize(300, 50);
+        this.setStyle("-fx-background-color: #F0F8FF;");
+        Text titleText = new Text("Tic-Tac-Toe");
+        titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
+        this.getChildren().add(titleText);
+        this.setAlignment(Pos.CENTER);
     }
 }
 
@@ -84,7 +89,7 @@ class PauseMenuFrame extends BorderPane {
 
         this.setTop(header);
         this.setCenter(menu);
-        //this.setBottom(footer);
+        this.setBottom(footer);
 
         backButton = menu.getBackButton();
         saveButton = menu.getSaveButton();

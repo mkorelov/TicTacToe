@@ -8,11 +8,11 @@ Version 1 Features:
 3. When the game ends it returns you to Main Menu (Done)
 
 Version 2 Features:
-- Add pause menu while in a game that allows you to return to the main menu
+- Add pause menu while in a game that allows you to return to the main menu (Done)
 - Allow selection of names instead of player 1 and player 2
 - Indicate which players turn it is
 - Add a score next to names in footer
-- Show winning screen and allow play agian or return to main menu
+- Show winning screen and allow play again or return to main menu
 
 Version 3 Features:
 - Add option to view rules from Main Menu
