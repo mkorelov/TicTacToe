@@ -19,6 +19,7 @@ import javafx.scene.text.*;
 
 class MainMenu extends VBox {
     private Button startButton;
+    private Button loadButton;
 
     MainMenu() {
         this.setPrefSize(800, 750);
@@ -30,12 +31,18 @@ class MainMenu extends VBox {
         Font font = new Font(45);
         startButton.setFont(font);
 
-        this.getChildren().add(startButton);
+        loadButton = new Button("Load");
+
+        this.getChildren().addAll(startButton, loadButton);
         this.setAlignment(Pos.CENTER);
     }
 
     Button getStartButton() {
         return this.startButton;
+    }
+
+    Button getLoadButton() {
+        return this.loadButton;
     }
 }
 
@@ -67,6 +74,7 @@ class MainMenuFrame extends BorderPane {
     private MainMenu menu;
 
     private Button startButton;
+    private Button loadButton;
 
     MainMenuFrame() {
         header = new MainMenuHeader();
@@ -78,6 +86,7 @@ class MainMenuFrame extends BorderPane {
         this.setBottom(footer);
 
         startButton = menu.getStartButton();
+        loadButton = menu.getLoadButton();
 
         addListeners();
     }
@@ -92,6 +101,10 @@ class MainMenuFrame extends BorderPane {
             currStage.setScene(new Scene(root, 700, 700));
             currStage.setResizable(false);
             currStage.show();
+        });
+
+        loadButton.setOnAction(e -> {
+
         });
     }
 }
