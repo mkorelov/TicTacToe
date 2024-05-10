@@ -43,7 +43,7 @@ class MainMenuHeader extends HBox {
     MainMenuHeader() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
-        Text titleText = new Text("Tic-Tac-Toe");
+        Text titleText = new Text("Main Menu");
         titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
         this.getChildren().add(titleText);
         this.setAlignment(Pos.CENTER);
@@ -88,7 +88,7 @@ class MainMenuFrame extends BorderPane {
 
             GameBoardFrame root = new GameBoardFrame();
 
-            currStage.setTitle("Tic-Tac-Toe");
+            currStage.setTitle("Tic-Tac-Toe App");
             currStage.setScene(new Scene(root, 700, 700));
             currStage.setResizable(false);
             currStage.show();

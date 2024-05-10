@@ -9,7 +9,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         MainMenuFrame root = new MainMenuFrame();
-        primaryStage.setTitle("Main Menu");
+        primaryStage.setTitle("Tic-Tac-Toe App");
         primaryStage.setScene(new Scene(root, 700, 700));
         primaryStage.setResizable(false);
         primaryStage.show();

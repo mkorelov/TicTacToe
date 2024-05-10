@@ -23,7 +23,7 @@ class PauseMenu extends VBox {
     private Button quitButton;
 
     PauseMenu() {
-        this.setPrefSize(800, 750);
+        this.setPrefSize(300, 200);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
         backButton = new Button("Back");
@@ -49,7 +49,12 @@ class PauseMenu extends VBox {
 
 class PauseMenuHeader extends HBox {
     PauseMenuHeader() {
-
+        this.setPrefSize(300, 50);
+        this.setStyle("-fx-background-color: #F0F8FF;");
+        Text titleText = new Text("Pause Menu");
+        titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
+        this.getChildren().add(titleText);
+        this.setAlignment(Pos.CENTER);
     }
 }
 
@@ -73,7 +78,7 @@ class PauseMenuFrame extends BorderPane {
         footer = new PauseMenuFooter();
         menu = new PauseMenu();
 
-        //this.setTop(header);
+        this.setTop(header);
         this.setCenter(menu);
         //this.setBottom(footer);
 
@@ -86,6 +91,8 @@ class PauseMenuFrame extends BorderPane {
 
     public void addListeners() {
         backButton.setOnAction(e -> {
+            Stage currStage = (Stage) backButton.getScene().getWindow();
+            currStage.close();
         });
 
         saveButton.setOnAction(e -> {
