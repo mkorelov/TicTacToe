@@ -210,8 +210,9 @@ class GameBoardFrame extends BorderPane {
 
     public void addListeners() {
         pauseButton.setOnAction(e -> {
+            Stage currStage = (Stage) pauseButton.getScene().getWindow();
             Stage newStage = new Stage();
-            PauseMenuFrame root = new PauseMenuFrame();
+            PauseMenuFrame root = new PauseMenuFrame(currStage);
             newStage.setTitle("Tic-Tac-Toe App");
             newStage.setScene(new Scene(root, 300, 300));
             newStage.setResizable(false);

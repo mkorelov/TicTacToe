@@ -69,14 +69,18 @@ class PauseMenuFrame extends BorderPane {
     private PauseMenuFooter footer;
     private PauseMenu menu;
 
+    private Stage oldStage;
+
     private Button backButton;
     private Button saveButton;
     private Button quitButton;
 
-    PauseMenuFrame() {
+    PauseMenuFrame(Stage stage) {
         header = new PauseMenuHeader();
         footer = new PauseMenuFooter();
         menu = new PauseMenu();
+
+        oldStage = stage;
 
         this.setTop(header);
         this.setCenter(menu);
@@ -99,6 +103,13 @@ class PauseMenuFrame extends BorderPane {
         });
 
         quitButton.setOnAction(e -> {
+            Stage currStage = (Stage) backButton.getScene().getWindow();
+            currStage.close();
+            MainMenuFrame root = new MainMenuFrame();
+            oldStage.setTitle("Tic-Tac-Toe App");
+            oldStage.setScene(new Scene(root, 700, 700));
+            oldStage.setResizable(false);
+            oldStage.show();
         });
     }
 }
