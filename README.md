@@ -19,8 +19,17 @@ Version 3 Features:
 - Add an option to save a game and load it (from a file)
 
 Version 4 Features:
-- Improve UI
+- Add single player and multiplayer
+- Easy/medium/hard single player using random number generator
+
+Version 5 Features:
+- Improve UI and UX
 - Add a leaderboard or stats based on the name chosen
+
+Version 6 Features:
+- Add login, server, and database
+- Allow person to play from multiple devices
+- Allow two people from different devices to play against each other online
 
 Features:
 1. UI (Game Board, Tiles, Xs/Os, Title of Game, Player One/Two, Score, etc.)

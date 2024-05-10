@@ -153,12 +153,18 @@ class GameBoardHeader extends HBox {
 }
 
 class GameBoardFooter extends HBox {
+    /*private Text player1;
+    private Text player 2;
+    for set method for palyer names*/
     GameBoardFooter() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
-        Text titleText = new Text("Tic-Tac-Toe");
-        titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
-        this.getChildren().add(titleText);
+        Text player1 = new Text("Player 1");
+        player1.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
+        Text player2 = new Text("Player 2");
+        player2.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
+        this.getChildren().addAll(player1, player2);
+        this.setSpacing(400);
         this.setAlignment(Pos.CENTER);
     }
 }
