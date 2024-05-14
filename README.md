@@ -10,11 +10,11 @@ Version 1 Features:
 Version 2 Features:
 - Add pause menu while in a game that allows you to return to the main menu (Done)
 - Allow selection of names instead of player 1 and player 2 (Done)
-- Indicate which players turn it is
 - Add a score next to names in footer (Done)
 - Show winning screen for player 1 or 2, or draw screen and allow play again (with same score and names) or return to main menu
 
 Version 3 Features:
+- Indicate which player's turn it is
 - Add option to view rules from Main Menu
 - Add an option to save a game and load it (from a file)
 
