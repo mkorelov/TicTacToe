@@ -20,11 +20,19 @@ import javafx.scene.text.*;
 class GameOverMenu extends VBox{
     // based on result show different text, player 1 win , player 2 win , or draw
     // allow for rematch or return to main menu
-    GameOverMenu(/*String str*/) {
+    GameOverMenu(int n) {
         // based on results in GameBoard and Game, pass in string that will be shown
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
-        Text text = new Text("Draw, Player 1 Wins, or Player 2 Wins");
+        String message;
+        if (n == -1) {
+            message = "It's a Draw";
+        } else if (n == 0) {
+            message = "Player 1 Wins";
+        } else {
+            message = "Player 2 Wins";
+        }
+        Text text = new Text(message/*"Draw, Player 1 Wins, or Player 2 Wins"*/);
         text.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
         this.getChildren().add(text);
         this.setAlignment(Pos.CENTER);
@@ -74,8 +82,8 @@ class GameOverFrame extends BorderPane {
     private Button playButton;
     private Button backButton;
 
-    GameOverFrame() {
-        menu = new GameOverMenu();
+    GameOverFrame(int n) {
+        menu = new GameOverMenu(n);
         header = new GameOverHeader();
         footer = new GameOverFooter();
 

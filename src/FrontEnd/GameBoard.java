@@ -235,7 +235,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
@@ -256,7 +256,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
@@ -277,7 +277,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
@@ -298,7 +298,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
@@ -319,7 +319,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
@@ -340,7 +340,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
@@ -361,7 +361,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
@@ -382,7 +382,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
@@ -403,7 +403,7 @@ class GameBoardFrame extends BorderPane {
                 currStage.setResizable(false);
                 currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
-                GameOverFrame root = new GameOverFrame();
+                GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
                 currStage.setScene(new Scene(root, 700, 700));
                 currStage.setResizable(false);
