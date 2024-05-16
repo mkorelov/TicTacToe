@@ -24,15 +24,15 @@ class GameOverMenu extends VBox{
         // based on results in GameBoard and Game, pass in string that will be shown
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
-        String message;
+        String message = "";
         if (n == -1) {
             message = "It's a Draw";
         } else if (n == 0) {
             message = "Player 1 Wins";
-        } else {
+        } else if (n == 1) {
             message = "Player 2 Wins";
         }
-        Text text = new Text(message/*"Draw, Player 1 Wins, or Player 2 Wins"*/);
+        Text text = new Text(message);
         text.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
         this.getChildren().add(text);
         this.setAlignment(Pos.CENTER);
@@ -103,7 +103,12 @@ class GameOverFrame extends BorderPane {
         });
 
         backButton.setOnAction(e -> {
-            
+            Stage currStage = (Stage) backButton.getScene().getWindow();
+            MainMenuFrame root = new MainMenuFrame();
+            currStage.setTitle("Tic-Tac-Toe App");
+            currStage.setScene(new Scene(root, 700, 700));
+            currStage.setResizable(false);
+            currStage.show();
         });
     }
 }
