@@ -99,7 +99,12 @@ class GameOverFrame extends BorderPane {
 
     public void addListeners() {
         playButton.setOnAction(e -> {
-            
+            Stage currStage = (Stage) playButton.getScene().getWindow();
+            GameBoardFrame root = new GameBoardFrame();
+            currStage.setTitle("Tic-Tac-Toe App");
+            currStage.setScene(new Scene(root, 700, 700));
+            currStage.setResizable(false);
+            currStage.show();
         });
 
         backButton.setOnAction(e -> {
