@@ -14,8 +14,9 @@ Version 2 Features:
 - Show winning screen for player 1 or 2, or draw screen and allow play again or return to menu (Done)
 
 Version 3 Features:
-- Indicate which player's turn it is
 - Add option to view rules from Main Menu
+- Add option to view rules from Pause Menu
+- Indicate which player's turn it is
 - keep same score and names if play again is selected
 - Add pop-up when new game starts that asks for name, settings, game format, etc.
 - Add an option to save a game and load it (from a file)

@@ -20,6 +20,7 @@ import javafx.scene.text.*;
 class MainMenu extends VBox {
     private Button startButton;
     private Button loadButton;
+    private Button ruleButton;
 
     MainMenu() {
         this.setPrefSize(800, 750);
@@ -33,7 +34,9 @@ class MainMenu extends VBox {
 
         loadButton = new Button("Load");
 
-        this.getChildren().addAll(startButton, loadButton);
+        ruleButton = new Button("Rules");
+
+        this.getChildren().addAll(startButton, loadButton, ruleButton);
         this.setAlignment(Pos.CENTER);
     }
 
@@ -43,6 +46,10 @@ class MainMenu extends VBox {
 
     Button getLoadButton() {
         return this.loadButton;
+    }
+
+    Button getRuleButton() {
+        return this.ruleButton;
     }
 }
 
@@ -75,6 +82,7 @@ class MainMenuFrame extends BorderPane {
 
     private Button startButton;
     private Button loadButton;
+    private Button ruleButton;
 
     MainMenuFrame() {
         header = new MainMenuHeader();
@@ -87,6 +95,7 @@ class MainMenuFrame extends BorderPane {
 
         startButton = menu.getStartButton();
         loadButton = menu.getLoadButton();
+        ruleButton = menu.getRuleButton();
 
         addListeners();
     }
@@ -105,6 +114,16 @@ class MainMenuFrame extends BorderPane {
 
         loadButton.setOnAction(e -> {
 
+        });
+
+        ruleButton.setOnAction(e -> {
+            Stage currStage = (Stage) ruleButton.getScene().getWindow();
+            Stage newStage = new Stage();
+            RuleMenuFrame root = new PauseMenuFrame(currStage);
+            newStage.setTitle("Tic-Tac-Toe App");
+            newStage.setScene(new Scene(root, 300, 300));
+            newStage.setResizable(false);
+            newStage.show();
         });
     }
 }
