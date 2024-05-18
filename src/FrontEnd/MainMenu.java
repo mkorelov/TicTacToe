@@ -119,7 +119,7 @@ class MainMenuFrame extends BorderPane {
         ruleButton.setOnAction(e -> {
             Stage currStage = (Stage) ruleButton.getScene().getWindow();
             Stage newStage = new Stage();
-            RuleMenuFrame root = new PauseMenuFrame(currStage);
+            RuleMenuFrame root = new RuleMenuFrame(currStage);
             newStage.setTitle("Tic-Tac-Toe App");
             newStage.setScene(new Scene(root, 300, 300));
             newStage.setResizable(false);
