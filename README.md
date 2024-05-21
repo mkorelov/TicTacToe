@@ -14,7 +14,7 @@ Version 2 Features:
 - Show winning screen for player 1 or 2, or draw screen and allow play again or return to menu (Done)
 
 Version 3 Features:
-- Add option to view rules from Main Menu
+- Add option to view rules from Main Menu (Done)
 - Add option to view rules from Pause Menu
 - Indicate which player's turn it is
 - keep same score and names if play again is selected

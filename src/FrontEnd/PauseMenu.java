@@ -21,6 +21,7 @@ class PauseMenu extends VBox {
     private Button backButton;
     private Button saveButton;
     private Button quitButton;
+    private Button ruleButton;
 
     PauseMenu() {
         this.setPrefSize(300, 200);
@@ -29,8 +30,9 @@ class PauseMenu extends VBox {
         backButton = new Button("Back");
         saveButton = new Button("Save");
         quitButton = new Button("Quit");
+        ruleButton = new Button("Rules");
 
-        this.getChildren().addAll(backButton, saveButton, quitButton);
+        this.getChildren().addAll(backButton, saveButton, quitButton, ruleButton);
         this.setAlignment(Pos.CENTER);
     }
 
@@ -44,6 +46,10 @@ class PauseMenu extends VBox {
 
     Button getQuitButton() {
         return this.quitButton;
+    }
+
+    Button getRuleButton() {
+        return this.ruleButton;
     }
 }
 
@@ -79,6 +85,7 @@ class PauseMenuFrame extends BorderPane {
     private Button backButton;
     private Button saveButton;
     private Button quitButton;
+    private Button ruleButton;
 
     PauseMenuFrame(Stage stage) {
         header = new PauseMenuHeader();
@@ -94,6 +101,7 @@ class PauseMenuFrame extends BorderPane {
         backButton = menu.getBackButton();
         saveButton = menu.getSaveButton();
         quitButton = menu.getQuitButton();
+        ruleButton = menu.getRuleButton();
 
         addListeners();
     }
@@ -115,6 +123,9 @@ class PauseMenuFrame extends BorderPane {
             oldStage.setScene(new Scene(root, 700, 700));
             oldStage.setResizable(false);
             oldStage.show();
+        });
+
+        ruleButton.setOnAction(e -> {
         });
     }
 }
