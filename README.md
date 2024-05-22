@@ -16,10 +16,10 @@ Version 2 Features:
 Version 3 Features:
 - Add option to view rules from Main Menu (Done)
 - Add option to view rules from Pause Menu (Done)
+- Add an option to save a game and load it (from a file)
 - Indicate which player's turn it is
 - keep same score and names if play again is selected
 - Add pop-up when new game starts that asks for name, settings, game format, etc.
-- Add an option to save a game and load it (from a file)
 
 Version 4 Features:
 - Add single player and multiplayer
