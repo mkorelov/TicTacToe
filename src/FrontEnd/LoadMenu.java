@@ -77,6 +77,7 @@ class LoadMenuFrame extends BorderPane {
     private LoadMenuHeader header;
     private LoadMenuFooter footer;
     private LoadMenu menu;
+    private ScrollPane scrollbar;
 
     private Button backButton;
 
@@ -85,8 +86,12 @@ class LoadMenuFrame extends BorderPane {
         footer = new LoadMenuFooter();
         menu = new LoadMenu();
 
+        scrollbar = new ScrollPane(menu);
+        scrollbar.setFitToWidth(true);
+        scrollbar.setFitToHeight(true);
+
         this.setTop(header);
-        this.setCenter(menu);
+        this.setCenter(scrollbar);
         this.setBottom(footer);
 
         backButton = footer.getBackButton();
