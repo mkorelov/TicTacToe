@@ -17,11 +17,12 @@ Version 3 Features:
 - Add option to view rules from Main Menu (Done)
 - Add option to view rules from Pause Menu (Done)
 - Add an option to save a game and load it (from a file)
-- Indicate which player's turn it is
+- show timestamp of when game was saved and allow sorting
 - keep same score and names if play again is selected
 - Add pop-up when new game starts that asks for name, settings, game format, etc.
 
 Version 4 Features:
+- Indicate which player's turn it is
 - Add single player and multiplayer
 - Easy/medium/hard single player using random number generator
 

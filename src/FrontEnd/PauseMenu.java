@@ -126,9 +126,8 @@ class PauseMenuFrame extends BorderPane {
         });
 
         ruleButton.setOnAction(e -> {
-            Stage currStage = (Stage) ruleButton.getScene().getWindow();
             Stage newStage = new Stage();
-            RuleMenuFrame root = new RuleMenuFrame(currStage);
+            RuleMenuFrame root = new RuleMenuFrame();
             newStage.setTitle("Tic-Tac-Toe App");
             newStage.setScene(new Scene(root, 300, 300));
             newStage.setResizable(false);

@@ -113,13 +113,19 @@ class MainMenuFrame extends BorderPane {
         });
 
         loadButton.setOnAction(e -> {
+            Stage currStage = (Stage) startButton.getScene().getWindow();
 
+            LoadMenuFrame root = new LoadMenuFrame();
+
+            currStage.setTitle("Tic-Tac-Toe App");
+            currStage.setScene(new Scene(root, 700, 700));
+            currStage.setResizable(false);
+            currStage.show();
         });
 
         ruleButton.setOnAction(e -> {
-            Stage currStage = (Stage) ruleButton.getScene().getWindow();
             Stage newStage = new Stage();
-            RuleMenuFrame root = new RuleMenuFrame(currStage);
+            RuleMenuFrame root = new RuleMenuFrame();
             newStage.setTitle("Tic-Tac-Toe App");
             newStage.setScene(new Scene(root, 300, 300));
             newStage.setResizable(false);

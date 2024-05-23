@@ -67,16 +67,12 @@ class RuleMenuFrame extends BorderPane {
     private RuleMenuFooter footer;
     private RuleMenu menu;
 
-    private Stage oldStage;
-
     private Button backButton;
 
-    RuleMenuFrame(Stage stage) {
+    RuleMenuFrame() {
         header = new RuleMenuHeader();
         footer = new RuleMenuFooter();
         menu = new RuleMenu();
-
-        oldStage = stage;
 
         this.setTop(header);
         this.setCenter(menu);
