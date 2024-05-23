@@ -39,7 +39,6 @@ class RuleMenu extends VBox {
         titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
 
         this.getChildren().addAll(titleText, firstRule, secondRule, thirdRule);
-        //this.setAlignment(Pos.CENTER);
     }
 }
 

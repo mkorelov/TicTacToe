@@ -36,7 +36,7 @@ class LoadMenu extends VBox {
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
-        Text titleText = new Text("Eventually replace with a list of games from a file");
+        Text titleText = new Text("App does not support saving/loading yet. Eventually will replace with a list of games from a file.");
         titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
 
         this.getChildren().addAll(titleText);

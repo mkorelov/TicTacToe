@@ -19,7 +19,7 @@ import javafx.scene.text.*;
 
 class MainMenu extends VBox {
     private Button startButton;
-    private Button loadButton;
+    //private Button loadButton;
     private Button ruleButton;
 
     MainMenu() {
@@ -32,11 +32,11 @@ class MainMenu extends VBox {
         Font font = new Font(45);
         startButton.setFont(font);
 
-        loadButton = new Button("Load");
+        //loadButton = new Button("Load");
 
         ruleButton = new Button("Rules");
 
-        this.getChildren().addAll(startButton, loadButton, ruleButton);
+        this.getChildren().addAll(startButton, /*loadButton,*/ ruleButton);
         this.setAlignment(Pos.CENTER);
     }
 
@@ -44,9 +44,9 @@ class MainMenu extends VBox {
         return this.startButton;
     }
 
-    Button getLoadButton() {
+    /*Button getLoadButton() {
         return this.loadButton;
-    }
+    }*/
 
     Button getRuleButton() {
         return this.ruleButton;
@@ -81,7 +81,7 @@ class MainMenuFrame extends BorderPane {
     private MainMenu menu;
 
     private Button startButton;
-    private Button loadButton;
+    //private Button loadButton;
     private Button ruleButton;
 
     MainMenuFrame() {
@@ -94,7 +94,7 @@ class MainMenuFrame extends BorderPane {
         this.setBottom(footer);
 
         startButton = menu.getStartButton();
-        loadButton = menu.getLoadButton();
+        //loadButton = menu.getLoadButton();
         ruleButton = menu.getRuleButton();
 
         addListeners();
@@ -112,7 +112,7 @@ class MainMenuFrame extends BorderPane {
             currStage.show();
         });
 
-        loadButton.setOnAction(e -> {
+        /*loadButton.setOnAction(e -> {
             Stage currStage = (Stage) startButton.getScene().getWindow();
 
             LoadMenuFrame root = new LoadMenuFrame();
@@ -121,7 +121,7 @@ class MainMenuFrame extends BorderPane {
             currStage.setScene(new Scene(root, 700, 700));
             currStage.setResizable(false);
             currStage.show();
-        });
+        });*/
 
         ruleButton.setOnAction(e -> {
             Stage newStage = new Stage();

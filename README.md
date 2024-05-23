@@ -16,26 +16,24 @@ Version 2 Features:
 Version 3 Features:
 - Add option to view rules from Main Menu (Done)
 - Add option to view rules from Pause Menu (Done)
-- keep same score and names if play again is selected
-
-Version 4 Features:
 - Improve UI and UX
 
 Potential Future Updates:
 
-Version 5 Features:
+Version 4 Features:
 - Indicate which player's turn it is
+- keep same score and names if play again is selected 
 - Add an option to save a game and load it from a file
 - show timestamp of when game was saved and allow sorting
 - Add single player and multiplayer
 - Easy/medium/hard single player using random number generator
 
-Version 6 Features:
+Version 5 Features:
 - Add pop-up when new game starts that asks for name, settings, game format, etc.
 - Add a leaderboard or stats based on the name chosen
 - Add error messages (when someone clicks on a tile already used, name is inappropriate, etc.)
 
-Version 7 Features:
+Version 6 Features:
 - Add login, server, and database
 - Allow person to play from multiple devices
 - Allow two people from different devices to play against each other online

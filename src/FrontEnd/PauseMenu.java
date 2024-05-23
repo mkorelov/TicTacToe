@@ -19,7 +19,7 @@ import javafx.scene.text.*;
 
 class PauseMenu extends VBox {
     private Button backButton;
-    private Button saveButton;
+    //private Button saveButton;
     private Button quitButton;
     private Button ruleButton;
 
@@ -28,11 +28,11 @@ class PauseMenu extends VBox {
         this.setStyle("-fx-background-color: #F0F8FF;");
 
         backButton = new Button("Back");
-        saveButton = new Button("Save");
+        //saveButton = new Button("Save");
         quitButton = new Button("Quit");
         ruleButton = new Button("Rules");
 
-        this.getChildren().addAll(backButton, saveButton, quitButton, ruleButton);
+        this.getChildren().addAll(backButton, /*saveButton,*/ quitButton, ruleButton);
         this.setAlignment(Pos.CENTER);
     }
 
@@ -40,9 +40,9 @@ class PauseMenu extends VBox {
         return this.backButton;
     }
 
-    Button getSaveButton() {
+    /*Button getSaveButton() {
         return this.saveButton;
-    }
+    }*/
 
     Button getQuitButton() {
         return this.quitButton;
@@ -83,7 +83,7 @@ class PauseMenuFrame extends BorderPane {
     private Stage oldStage;
 
     private Button backButton;
-    private Button saveButton;
+    //private Button saveButton;
     private Button quitButton;
     private Button ruleButton;
 
@@ -99,7 +99,7 @@ class PauseMenuFrame extends BorderPane {
         this.setBottom(footer);
 
         backButton = menu.getBackButton();
-        saveButton = menu.getSaveButton();
+        //saveButton = menu.getSaveButton();
         quitButton = menu.getQuitButton();
         ruleButton = menu.getRuleButton();
 
@@ -112,8 +112,8 @@ class PauseMenuFrame extends BorderPane {
             currStage.close();
         });
 
-        saveButton.setOnAction(e -> {
-        });
+        /*saveButton.setOnAction(e -> {
+        });*/
 
         quitButton.setOnAction(e -> {
             Stage currStage = (Stage) backButton.getScene().getWindow();
