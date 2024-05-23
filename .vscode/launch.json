@@ -16,7 +16,7 @@
             "request": "launch",
             "mainClass": "FrontEnd.Main",
             "projectName": "TicTacToe_96d44a31",
-            "vmArgs": "--module-path '/Users/michaelkorelov/Projects/javafx-sdk-22.0.1/lib' --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path '/Users/michaelkorelov/Projects/TicTacToe/lib' --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }

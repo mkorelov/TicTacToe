@@ -46,8 +46,8 @@ class MainMenu extends VBox {
         ruleButton = new Button("Rules");
         ruleButton.setPrefHeight(50);
         ruleButton.setPrefWidth(300);
-        Font fon = new Font(25);
-        ruleButton.setFont(fon);
+        Font font = new Font(25);
+        ruleButton.setFont(font);
 
         this.getChildren().addAll(startButton, /*loadButton,*/ ruleButton);
         this.setSpacing(10);
