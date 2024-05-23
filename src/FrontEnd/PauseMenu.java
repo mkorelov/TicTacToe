@@ -28,11 +28,21 @@ class PauseMenu extends VBox {
         this.setStyle("-fx-background-color: #F0F8FF;");
 
         backButton = new Button("Back");
-        //saveButton = new Button("Save");
-        quitButton = new Button("Quit");
-        ruleButton = new Button("Rules");
+        backButton.setPrefHeight(40);
+        backButton.setPrefWidth(60);
 
-        this.getChildren().addAll(backButton, /*saveButton,*/ quitButton, ruleButton);
+        //saveButton = new Button("Save");
+
+        quitButton = new Button("Quit");
+        quitButton.setPrefHeight(40);
+        quitButton.setPrefWidth(60);
+
+        ruleButton = new Button("Rules");
+        ruleButton.setPrefHeight(40);
+        ruleButton.setPrefWidth(60);
+
+        this.getChildren().addAll(ruleButton, /*saveButton,*/ quitButton, backButton);
+        this.setSpacing(10);
         this.setAlignment(Pos.CENTER);
     }
 

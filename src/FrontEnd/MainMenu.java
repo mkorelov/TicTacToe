@@ -17,6 +17,10 @@ import javafx.scene.layout.BorderPane;
 import javafx.geometry.Insets;
 import javafx.scene.text.*;
 
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import java.io.File;
+
 class MainMenu extends VBox {
     private Button startButton;
     //private Button loadButton;
@@ -25,18 +29,28 @@ class MainMenu extends VBox {
     MainMenu() {
         this.setPrefSize(800, 750);
         this.setStyle("-fx-background-color: #F0F8FF;");
+        
+        Image image = new Image(new File("src/playbutton.png").toURI().toString());
+        ImageView imageView = new ImageView(image);
 
-        startButton = new Button("Start Game");
+        imageView.setFitWidth(280);
+        imageView.setFitHeight(280);
+        startButton = new Button();
+        startButton.setGraphic(imageView);
+
         startButton.setPrefHeight(300);
         startButton.setPrefWidth(300);
-        Font font = new Font(45);
-        startButton.setFont(font);
 
         //loadButton = new Button("Load");
 
         ruleButton = new Button("Rules");
+        ruleButton.setPrefHeight(50);
+        ruleButton.setPrefWidth(300);
+        Font fon = new Font(25);
+        ruleButton.setFont(fon);
 
         this.getChildren().addAll(startButton, /*loadButton,*/ ruleButton);
+        this.setSpacing(10);
         this.setAlignment(Pos.CENTER);
     }
 

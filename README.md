@@ -17,6 +17,7 @@ Version 3 Features:
 - Add option to view rules from Main Menu (Done)
 - Add option to view rules from Pause Menu (Done)
 - Improve UI and UX
+- Add are you sure you want to quit?
 
 Potential Future Updates:
 

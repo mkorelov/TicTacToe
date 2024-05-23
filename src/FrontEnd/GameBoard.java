@@ -14,6 +14,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.geometry.Insets;
 import javafx.scene.text.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import java.io.File;
 
 class GameBoard extends VBox {
     private GridPane board;
@@ -140,10 +143,23 @@ class GameBoardHeader extends HBox {
     GameBoardHeader() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
-        pauseButton = new Button("Pause");
+
+        Image image = new Image(new File("src/pausebutton.png").toURI().toString());
+        ImageView imageView = new ImageView(image);
+
+        imageView.setFitWidth(20);
+        imageView.setFitHeight(20);
+        pauseButton = new Button();
+        pauseButton.setGraphic(imageView);
+
+        pauseButton.setPrefHeight(50);
+        pauseButton.setPrefWidth(50);
+
+
         Text titleText = new Text("Tic-Tac-Toe");
         titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
         this.getChildren().addAll(titleText, pauseButton);
+        this.setSpacing(10);
         this.setAlignment(Pos.CENTER);
     }
 
