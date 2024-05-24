@@ -127,12 +127,11 @@ class PauseMenuFrame extends BorderPane {
 
         quitButton.setOnAction(e -> {
             Stage currStage = (Stage) backButton.getScene().getWindow();
-            currStage.close();
-            MainMenuFrame root = new MainMenuFrame();
-            oldStage.setTitle("Tic-Tac-Toe App");
-            oldStage.setScene(new Scene(root, 700, 700));
-            oldStage.setResizable(false);
-            oldStage.show();
+            QuitMenuFrame root = new QuitMenuFrame(oldStage);
+            currStage.setTitle("Tic-Tac-Toe App");
+            currStage.setScene(new Scene(root, 300, 300));
+            currStage.setResizable(false);
+            currStage.show();
         });
 
         ruleButton.setOnAction(e -> {
