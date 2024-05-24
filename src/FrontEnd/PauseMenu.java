@@ -4,22 +4,13 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.BorderPane;
 import javafx.geometry.Pos;
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.geometry.Pos;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.*;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.layout.BorderPane;
-import javafx.geometry.Insets;
 import javafx.scene.text.*;
 
 class PauseMenu extends VBox {
     private Button backButton;
-    //private Button saveButton;
     private Button quitButton;
     private Button ruleButton;
 
@@ -31,8 +22,6 @@ class PauseMenu extends VBox {
         backButton.setPrefHeight(40);
         backButton.setPrefWidth(60);
 
-        //saveButton = new Button("Save");
-
         quitButton = new Button("Quit");
         quitButton.setPrefHeight(40);
         quitButton.setPrefWidth(60);
@@ -41,7 +30,7 @@ class PauseMenu extends VBox {
         ruleButton.setPrefHeight(40);
         ruleButton.setPrefWidth(60);
 
-        this.getChildren().addAll(ruleButton, /*saveButton,*/ quitButton, backButton);
+        this.getChildren().addAll(ruleButton, quitButton, backButton);
         this.setSpacing(10);
         this.setAlignment(Pos.CENTER);
     }
@@ -49,10 +38,6 @@ class PauseMenu extends VBox {
     Button getBackButton() {
         return this.backButton;
     }
-
-    /*Button getSaveButton() {
-        return this.saveButton;
-    }*/
 
     Button getQuitButton() {
         return this.quitButton;
@@ -93,7 +78,6 @@ class PauseMenuFrame extends BorderPane {
     private Stage oldStage;
 
     private Button backButton;
-    //private Button saveButton;
     private Button quitButton;
     private Button ruleButton;
 
@@ -109,7 +93,6 @@ class PauseMenuFrame extends BorderPane {
         this.setBottom(footer);
 
         backButton = menu.getBackButton();
-        //saveButton = menu.getSaveButton();
         quitButton = menu.getQuitButton();
         ruleButton = menu.getRuleButton();
 
@@ -121,9 +104,6 @@ class PauseMenuFrame extends BorderPane {
             Stage currStage = (Stage) backButton.getScene().getWindow();
             currStage.close();
         });
-
-        /*saveButton.setOnAction(e -> {
-        });*/
 
         quitButton.setOnAction(e -> {
             Stage currStage = (Stage) backButton.getScene().getWindow();

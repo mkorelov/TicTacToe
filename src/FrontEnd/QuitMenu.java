@@ -4,21 +4,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.BorderPane;
 import javafx.geometry.Pos;
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.geometry.Pos;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.*;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.layout.BorderPane;
-import javafx.geometry.Insets;
 import javafx.scene.text.*;
 
 class QuitMenu extends VBox {
-    //this.setPrefSize(300, 200);
     QuitMenu() {
         this.setStyle("-fx-background-color: #F0F8FF;");
 
@@ -37,7 +28,6 @@ class QuitMenuFooter extends HBox {
     private Button noButton;
 
     QuitMenuFooter() {
-        //this.setPrefSize(300, 200);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
         yesButton = new Button("Yes");
@@ -59,7 +49,6 @@ class QuitMenuFooter extends HBox {
 
 class QuitMenuHeader extends HBox {
     QuitMenuHeader() {
-        //this.setPrefSize(300, 200);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
         Text titleText = new Text("Quit Menu");

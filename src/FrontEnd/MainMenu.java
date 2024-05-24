@@ -4,17 +4,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.BorderPane;
 import javafx.geometry.Pos;
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.geometry.Pos;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.*;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.layout.BorderPane;
-import javafx.geometry.Insets;
 import javafx.scene.text.*;
 
 import javafx.scene.image.Image;
@@ -23,7 +15,6 @@ import java.io.File;
 
 class MainMenu extends VBox {
     private Button startButton;
-    //private Button loadButton;
     private Button ruleButton;
 
     MainMenu() {
@@ -41,15 +32,13 @@ class MainMenu extends VBox {
         startButton.setPrefHeight(300);
         startButton.setPrefWidth(300);
 
-        //loadButton = new Button("Load");
-
         ruleButton = new Button("Rules");
         ruleButton.setPrefHeight(50);
         ruleButton.setPrefWidth(300);
         Font font = new Font(25);
         ruleButton.setFont(font);
 
-        this.getChildren().addAll(startButton, /*loadButton,*/ ruleButton);
+        this.getChildren().addAll(startButton, ruleButton);
         this.setSpacing(10);
         this.setAlignment(Pos.CENTER);
     }
@@ -57,10 +46,6 @@ class MainMenu extends VBox {
     Button getStartButton() {
         return this.startButton;
     }
-
-    /*Button getLoadButton() {
-        return this.loadButton;
-    }*/
 
     Button getRuleButton() {
         return this.ruleButton;
@@ -95,7 +80,6 @@ class MainMenuFrame extends BorderPane {
     private MainMenu menu;
 
     private Button startButton;
-    //private Button loadButton;
     private Button ruleButton;
 
     MainMenuFrame() {
@@ -108,7 +92,6 @@ class MainMenuFrame extends BorderPane {
         this.setBottom(footer);
 
         startButton = menu.getStartButton();
-        //loadButton = menu.getLoadButton();
         ruleButton = menu.getRuleButton();
 
         addListeners();
@@ -125,17 +108,6 @@ class MainMenuFrame extends BorderPane {
             currStage.setResizable(false);
             currStage.show();
         });
-
-        /*loadButton.setOnAction(e -> {
-            Stage currStage = (Stage) startButton.getScene().getWindow();
-
-            LoadMenuFrame root = new LoadMenuFrame();
-
-            currStage.setTitle("Tic-Tac-Toe App");
-            currStage.setScene(new Scene(root, 700, 700));
-            currStage.setResizable(false);
-            currStage.show();
-        });*/
 
         ruleButton.setOnAction(e -> {
             Stage newStage = new Stage();

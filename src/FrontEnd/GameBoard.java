@@ -3,16 +3,11 @@ package FrontEnd;
 import BackEnd.Game;
 
 import javafx.geometry.Pos;
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.*;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.geometry.Insets;
 import javafx.scene.text.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -244,12 +239,6 @@ class GameBoardFrame extends BorderPane {
                 lt.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
@@ -265,12 +254,6 @@ class GameBoardFrame extends BorderPane {
                 mt.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
@@ -286,12 +269,6 @@ class GameBoardFrame extends BorderPane {
                 rt.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
@@ -307,12 +284,6 @@ class GameBoardFrame extends BorderPane {
                 lm.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
@@ -328,12 +299,6 @@ class GameBoardFrame extends BorderPane {
                 mm.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
@@ -349,12 +314,6 @@ class GameBoardFrame extends BorderPane {
                 rm.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
@@ -370,12 +329,6 @@ class GameBoardFrame extends BorderPane {
                 lb.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
@@ -391,12 +344,6 @@ class GameBoardFrame extends BorderPane {
                 mb.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");
@@ -412,12 +359,6 @@ class GameBoardFrame extends BorderPane {
                 rb.setText(str);
             }
             if (game.gameOver() == true) {
-                /*Stage currStage = (Stage) lt.getScene().getWindow();
-                MainMenuFrame root = new MainMenuFrame();
-                currStage.setTitle("Tic-Tac-Toe App");
-                currStage.setScene(new Scene(root, 700, 700));
-                currStage.setResizable(false);
-                currStage.show();*/
                 Stage currStage = (Stage) lt.getScene().getWindow();
                 GameOverFrame root = new GameOverFrame(game.getWinner());
                 currStage.setTitle("Tic-Tac-Toe App");

@@ -27,7 +27,7 @@ public class Game {
                 return "O";
             }
         }
-        return "";  // return arr[pos], but it regenerates the position
+        return "";
     }
 
     public int getWinner() {
