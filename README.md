@@ -1,6 +1,6 @@
 ## TicTacToe
 
-This is my implementation of Tic-Tac-Toe using Java & JavaFX. 
+This is my implementation of Tic-Tac-Toe using Java & JavaFX on a Apple Silicon Macbook.
 
 Version 1 Features:
 1. Launching the app opens the Main Menu where you can start a new game (Done)
