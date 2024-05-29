@@ -1,37 +1,18 @@
 ///////////////////////////////////////////////////////////////////////////////
-//                   ALL STUDENTS COMPLETE THESE SECTIONS
-// Title:              (program's title)
-// Files:              (list of source files)
-// Quarter:            (course) Spring 2020
 //
-// Author:             (your name)
-// Email:              (your email address)
-// Instructor's Name:  (name of your instructor)
+// Title:              TicTacToe
+// Files:              Game.java, GameBoard.java, GameOverMenu.java,
+//                     MainMenu.java, PauseMenu.java, QuitMenu.java,
+//                     RuleMenu.java
 //
-//////////////////// PAIR PROGRAMMERS COMPLETE THIS SECTION ///////////////////
+// Date:               May 29, 2024
+// Author:             Michael Korelov
+// Email:              korelovmichael@gmail.com
 //
-//                  CHECK ASSIGNMENT PAGE TO see IF PAIR-PROGRAMMING IS ALLOWED
-//                  If pair programming is allowed:
-//                  1. Read PAIR-PROGRAMMING policy
-//                  2. Choose a partner wisely
-//                  3. Complete this section for each program file
+///////////////////////////////////////////////////////////////////////////////
 //
-// Pair Partner:        (name of your pair programming partner)
-// Email:               (email address of your programming partner)
-// Instructors's Name:  (name of your partner's instructor)
-// Lab Section:         (your partner's lab section number)
+// Online sources:   UCSD CSE 110 Professor Miranda Lab 1
 //
-//////////////////// STUDENTS WHO GET HELP FROM OTHER THAN THEIR PARTNER //////
-//                   must fully acknowledge and credit those sources of help.
-//                   Instructors and TAs do not have to be credited here,
-//                   but roommates, relatives, strangers, etc do.
-//
-// Persons:          Identify persons by name, relationship to you, and email.
-//                   Describe in detail the the ideas and help they provided.
-//
-// Online sources:   Avoid web searches to solve your problems, but if you do
-//                   search, be sure to include Web URLs and description of
-//                   of any information you find.
 //////////////////////////// 80 columns wide //////////////////////////////////
 
 package FrontEnd;
