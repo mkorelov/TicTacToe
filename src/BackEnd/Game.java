@@ -40,6 +40,13 @@ public class Game {
     private int moves;
     private int winner; // 0 : X and 1 : O and -1 : draw
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public Game() {
         arr = new int[9];
         for (int i = 0; i < arr.length; i++) {
@@ -50,6 +57,13 @@ public class Game {
         winner = -1;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public String move(int pos) {
         if (arr[pos] == -1) {
             moves += 1;
@@ -64,10 +78,24 @@ public class Game {
         return "";
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public int getWinner() {
         return this.winner;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public boolean gameOver() {
 
         // if all blocks are full

@@ -44,6 +44,14 @@ import javafx.scene.text.*;
  * @author (your name)
  */
 class GameOverMenu extends VBox{
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     GameOverMenu(int n) {
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -71,6 +79,14 @@ class GameOverMenu extends VBox{
  * @author (your name)
  */
 class GameOverHeader extends HBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     GameOverHeader() {
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -93,6 +109,13 @@ class GameOverFooter extends HBox{
     private Button playButton;
     private Button backButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     GameOverFooter() {
         this.setPrefSize(300, 200);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -104,10 +127,24 @@ class GameOverFooter extends HBox{
         this.setAlignment(Pos.CENTER);
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getPlayButton() {
         return this.playButton;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getBackButton() {
         return this.backButton;
     }
@@ -129,6 +166,13 @@ class GameOverFrame extends BorderPane {
     private Button playButton;
     private Button backButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     GameOverFrame(int n) {
         menu = new GameOverMenu(n);
         header = new GameOverHeader();
@@ -144,6 +188,13 @@ class GameOverFrame extends BorderPane {
         addListeners();
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public void addListeners() {
         playButton.setOnAction(e -> {
             Stage currStage = (Stage) playButton.getScene().getWindow();

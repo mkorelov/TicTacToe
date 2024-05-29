@@ -48,6 +48,13 @@ class PauseMenu extends VBox {
     private Button quitButton;
     private Button ruleButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     PauseMenu() {
         this.setPrefSize(300, 200);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -69,14 +76,35 @@ class PauseMenu extends VBox {
         this.setAlignment(Pos.CENTER);
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getBackButton() {
         return this.backButton;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getQuitButton() {
         return this.quitButton;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getRuleButton() {
         return this.ruleButton;
     }
@@ -91,6 +119,14 @@ class PauseMenu extends VBox {
  * @author (your name)
  */
 class PauseMenuHeader extends HBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     PauseMenuHeader() {
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -110,6 +146,14 @@ class PauseMenuHeader extends HBox {
  * @author (your name)
  */
 class PauseMenuFooter extends HBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     PauseMenuFooter() {
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -139,6 +183,13 @@ class PauseMenuFrame extends BorderPane {
     private Button quitButton;
     private Button ruleButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     PauseMenuFrame(Stage stage) {
         header = new PauseMenuHeader();
         footer = new PauseMenuFooter();
@@ -157,6 +208,13 @@ class PauseMenuFrame extends BorderPane {
         addListeners();
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public void addListeners() {
         backButton.setOnAction(e -> {
             Stage currStage = (Stage) backButton.getScene().getWindow();

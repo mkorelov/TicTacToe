@@ -44,6 +44,14 @@ import javafx.scene.text.*;
  * @author (your name)
  */
 class QuitMenu extends VBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     QuitMenu() {
         this.setStyle("-fx-background-color: #F0F8FF;");
 
@@ -69,6 +77,13 @@ class QuitMenuFooter extends HBox {
     private Button yesButton;
     private Button noButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     QuitMenuFooter() {
         this.setStyle("-fx-background-color: #F0F8FF;");
 
@@ -80,10 +95,24 @@ class QuitMenuFooter extends HBox {
         this.setAlignment(Pos.CENTER);
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getYesButton() {
         return this.yesButton;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getNoButton() {
         return this.noButton;
     }
@@ -98,6 +127,14 @@ class QuitMenuFooter extends HBox {
  * @author (your name)
  */
 class QuitMenuHeader extends HBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     QuitMenuHeader() {
         this.setStyle("-fx-background-color: #F0F8FF;");
 
@@ -126,6 +163,13 @@ class QuitMenuFrame extends BorderPane {
 
     private Stage oldStage;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     QuitMenuFrame(Stage stage) {
         menu = new QuitMenu();
         footer = new QuitMenuFooter();
@@ -143,6 +187,13 @@ class QuitMenuFrame extends BorderPane {
         addListeners();
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public void addListeners() {
         yesButton.setOnAction(e -> {
             Stage currStage = (Stage) yesButton.getScene().getWindow();

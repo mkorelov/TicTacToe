@@ -62,6 +62,13 @@ class GameBoard extends VBox {
     private Button mb;  // middle bottom box
     private Button rb;  // right bottom box
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     GameBoard() {
         this.setPrefSize(800, 750);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -129,38 +136,101 @@ class GameBoard extends VBox {
         this.setAlignment(Pos.CENTER);
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getLTButton() {
         return this.lt;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getMTButton() {
         return this.mt;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getRTButton() {
         return this.rt;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getLMButton() {
         return this.lm;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getMMButton() {
         return this.mm;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getRMButton() {
         return this.rm;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getLBButton() {
         return this.lb;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getMBButton() {
         return this.mb;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getRBButton() {
         return this.rb;
     }
@@ -177,6 +247,13 @@ class GameBoard extends VBox {
 class GameBoardHeader extends HBox {
     private Button pauseButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     GameBoardHeader() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -200,6 +277,13 @@ class GameBoardHeader extends HBox {
         this.setAlignment(Pos.CENTER);
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getPauseButton() {
         return this.pauseButton;
     }
@@ -214,6 +298,14 @@ class GameBoardHeader extends HBox {
  * @author (your name)
  */
 class GameBoardFooter extends HBox {
+    
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     GameBoardFooter() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -254,6 +346,13 @@ class GameBoardFrame extends BorderPane {
     private Button mb;
     private Button rb;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     GameBoardFrame() {
         header = new GameBoardHeader();
         footer = new GameBoardFooter();
@@ -280,6 +379,13 @@ class GameBoardFrame extends BorderPane {
         addListeners();
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public void addListeners() {
         pauseButton.setOnAction(e -> {
             Stage currStage = (Stage) pauseButton.getScene().getWindow();

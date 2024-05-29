@@ -43,6 +43,14 @@ import javafx.scene.text.*;
  * @author (your name)
  */
 class RuleMenu extends VBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     RuleMenu() {
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -77,6 +85,14 @@ class RuleMenu extends VBox {
  * @author (your name)
  */
 class RuleMenuHeader extends HBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     RuleMenuHeader() {
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -98,6 +114,13 @@ class RuleMenuHeader extends HBox {
 class RuleMenuFooter extends HBox {
     private Button backButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     RuleMenuFooter() {
         this.setPrefSize(300, 200);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -108,6 +131,13 @@ class RuleMenuFooter extends HBox {
         this.setAlignment(Pos.CENTER);
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getBackButton() {
         return this.backButton;
     }
@@ -128,6 +158,13 @@ class RuleMenuFrame extends BorderPane {
 
     private Button backButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     RuleMenuFrame() {
         header = new RuleMenuHeader();
         footer = new RuleMenuFooter();
@@ -142,6 +179,13 @@ class RuleMenuFrame extends BorderPane {
         addListeners();
     }  
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     void addListeners() {
         backButton.setOnAction(e -> {
             Stage currStage = (Stage) backButton.getScene().getWindow();

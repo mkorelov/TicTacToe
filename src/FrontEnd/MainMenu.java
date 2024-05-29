@@ -51,6 +51,13 @@ class MainMenu extends VBox {
     private Button startButton;
     private Button ruleButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     MainMenu() {
         this.setPrefSize(800, 750);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -77,10 +84,24 @@ class MainMenu extends VBox {
         this.setAlignment(Pos.CENTER);
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getStartButton() {
         return this.startButton;
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     Button getRuleButton() {
         return this.ruleButton;
     }
@@ -95,6 +116,14 @@ class MainMenu extends VBox {
  * @author (your name)
  */
 class MainMenuHeader extends HBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     MainMenuHeader() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -114,6 +143,14 @@ class MainMenuHeader extends HBox {
  * @author (your name)
  */
 class MainMenuFooter extends HBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     MainMenuFooter() {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -140,6 +177,13 @@ class MainMenuFrame extends BorderPane {
     private Button startButton;
     private Button ruleButton;
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     MainMenuFrame() {
         header = new MainMenuHeader();
         footer = new MainMenuFooter();
@@ -155,6 +199,13 @@ class MainMenuFrame extends BorderPane {
         addListeners();
     }
 
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public void addListeners() {
         startButton.setOnAction(e -> {
             Stage currStage = (Stage) startButton.getScene().getWindow();

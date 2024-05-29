@@ -48,8 +48,14 @@ import javafx.stage.Stage;
  *
  * @author (your name)
  */
-public class Main extends Application {
-
+public class Main extends Application {    
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         MainMenuFrame root = new MainMenuFrame();
@@ -59,6 +65,13 @@ public class Main extends Application {
         primaryStage.show();
     }
     
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
     public static void main(String[] args) {
         launch(args);
     }
