@@ -215,7 +215,7 @@ class PauseMenuFrame extends BorderPane {
      * @param (parameter name) (Do the same for each additional parameter)
      * @return (description of the return value)
      */
-    public void addListeners() {
+    void addListeners() {
         backButton.setOnAction(e -> {
             Stage currStage = (Stage) backButton.getScene().getWindow();
             currStage.close();

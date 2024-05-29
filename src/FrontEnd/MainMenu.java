@@ -206,7 +206,7 @@ class MainMenuFrame extends BorderPane {
      * @param (parameter name) (Do the same for each additional parameter)
      * @return (description of the return value)
      */
-    public void addListeners() {
+    void addListeners() {
         startButton.setOnAction(e -> {
             Stage currStage = (Stage) startButton.getScene().getWindow();
 

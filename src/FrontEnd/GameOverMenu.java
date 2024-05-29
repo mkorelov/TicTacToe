@@ -195,7 +195,7 @@ class GameOverFrame extends BorderPane {
      * @param (parameter name) (Do the same for each additional parameter)
      * @return (description of the return value)
      */
-    public void addListeners() {
+    void addListeners() {
         playButton.setOnAction(e -> {
             Stage currStage = (Stage) playButton.getScene().getWindow();
             GameBoardFrame root = new GameBoardFrame();

@@ -298,7 +298,7 @@ class GameBoardHeader extends HBox {
  * @author (your name)
  */
 class GameBoardFooter extends HBox {
-    
+
     /**
      * (Write a succinct description of this method here.)
      *
@@ -386,7 +386,7 @@ class GameBoardFrame extends BorderPane {
      * @param (parameter name) (Do the same for each additional parameter)
      * @return (description of the return value)
      */
-    public void addListeners() {
+    void addListeners() {
         pauseButton.setOnAction(e -> {
             Stage currStage = (Stage) pauseButton.getScene().getWindow();
             Stage newStage = new Stage();

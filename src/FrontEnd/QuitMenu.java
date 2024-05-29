@@ -194,7 +194,7 @@ class QuitMenuFrame extends BorderPane {
      * @param (parameter name) (Do the same for each additional parameter)
      * @return (description of the return value)
      */
-    public void addListeners() {
+    void addListeners() {
         yesButton.setOnAction(e -> {
             Stage currStage = (Stage) yesButton.getScene().getWindow();
             currStage.close();
