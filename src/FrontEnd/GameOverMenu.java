@@ -25,12 +25,12 @@ import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components in the center of the Game Over Menu
+ * screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class GameOverMenu extends VBox{
 
@@ -60,12 +60,12 @@ class GameOverMenu extends VBox{
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the top of the Game Over Menu
+ * screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class GameOverHeader extends HBox {
 
@@ -87,12 +87,13 @@ class GameOverHeader extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the bottom of the Game Over Menu
+ * screen. There are two instance variables, which are buttons. One is to 
+ * play again and the other is to return to the main menu.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class GameOverFooter extends HBox{
     private Button playButton;
@@ -140,12 +141,13 @@ class GameOverFooter extends HBox{
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class combines all the components of the Game Over Menu screen. 
+ * It has all the same instance variables as the other classes, but also an 
+ * additional one for each individual component of the screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class GameOverFrame extends BorderPane {
     private GameOverMenu menu;

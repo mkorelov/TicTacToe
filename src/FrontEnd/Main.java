@@ -22,14 +22,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the main method to run the application.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
-public class Main extends Application {    
+public class Main extends Application {
+
     /**
      * (Write a succinct description of this method here.)
      *

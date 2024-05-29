@@ -29,12 +29,13 @@ import javafx.scene.image.ImageView;
 import java.io.File;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components in the center of the Main Menu screen.
+ * The two instance variables are both buttons, where one is to start a game
+ * and the other is to look at the rules.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class MainMenu extends VBox {
     private Button startButton;
@@ -51,7 +52,8 @@ class MainMenu extends VBox {
         this.setPrefSize(800, 750);
         this.setStyle("-fx-background-color: #F0F8FF;");
         
-        Image image = new Image(new File("src/playbutton.png").toURI().toString());
+        String path = "src/playbutton.png";
+        Image image = new Image(new File(path).toURI().toString());
         ImageView imageView = new ImageView(image);
 
         imageView.setFitWidth(280);
@@ -97,12 +99,11 @@ class MainMenu extends VBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the top of the Main Menu screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class MainMenuHeader extends HBox {
 
@@ -124,12 +125,11 @@ class MainMenuHeader extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the bottom of the Main Menu screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class MainMenuFooter extends HBox {
 
@@ -151,12 +151,13 @@ class MainMenuFooter extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class combines all the components of the Main Menu screen. It has 
+ * all the same instance variables as the other classes, but also an 
+ * additional one for each individual component of the screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class MainMenuFrame extends BorderPane {
     private MainMenuHeader header;

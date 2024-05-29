@@ -24,12 +24,11 @@ import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components in the center of the Rule Menu screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class RuleMenu extends VBox {
 
@@ -66,12 +65,11 @@ class RuleMenu extends VBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the top of the Rule Menu screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class RuleMenuHeader extends HBox {
 
@@ -93,12 +91,12 @@ class RuleMenuHeader extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the bottom of the Rule Menu screen.
+ * The only instance variable is a button that closes the current window.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class RuleMenuFooter extends HBox {
     private Button backButton;
@@ -133,12 +131,13 @@ class RuleMenuFooter extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class combines all the components of the Rule Menu screen. It has 
+ * all the same instance variables as the other classes, but also an 
+ * additional one for each individual component of the screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class RuleMenuFrame extends BorderPane {
     private RuleMenuHeader header;

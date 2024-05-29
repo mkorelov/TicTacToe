@@ -25,12 +25,14 @@ import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components in the center of the Pause Menu screen.
+ * There are three instance variables, which are all buttons. One button will
+ * show the rules, another one returns to main menu, and the last one closes
+ * this menu.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class PauseMenu extends VBox {
     private Button backButton;
@@ -100,12 +102,11 @@ class PauseMenu extends VBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the top of the Pause Menu screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class PauseMenuHeader extends HBox {
 
@@ -127,12 +128,11 @@ class PauseMenuHeader extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the bottom of the Pause Menu screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class PauseMenuFooter extends HBox {
 
@@ -154,12 +154,14 @@ class PauseMenuFooter extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class combines all the components of the Pause Menu screen. It has 
+ * all the same instance variables as the other classes, but also an 
+ * additional one for each individual component of the screen. There is 
+ * also an additional one that keeps track of the previous screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class PauseMenuFrame extends BorderPane {
     private PauseMenuHeader header;

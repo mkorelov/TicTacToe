@@ -16,12 +16,15 @@
 package BackEnd;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the game logic for Tic-Tac-Toe. The instance variables
+ * are an array (arr) that keeps track of what squares on the game board are 
+ * used, a flag (turn) that keeps track of what symbol's turn is next, a 
+ * variable (moves) that keeps track of how many moves have been made, and a 
+ * variable (winner) that indicates the result of the game.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 public class Game {
     private int[] arr;
@@ -86,7 +89,6 @@ public class Game {
      * @return (description of the return value)
      */
     public boolean gameOver() {
-
         // if all blocks are full
         if (moves == 9) {
             winner = -1;

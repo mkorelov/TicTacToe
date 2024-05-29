@@ -25,12 +25,11 @@ import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components in the center of the Quit Menu screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class QuitMenu extends VBox {
 
@@ -44,7 +43,8 @@ class QuitMenu extends VBox {
     QuitMenu() {
         this.setStyle("-fx-background-color: #F0F8FF;");
 
-        Text text = new Text("Are you sure you want to quit? (You will lose all progress)");
+        String str = "Are you sure you? (You will lose all progress)";
+        Text text = new Text(str);
         text.setWrappingWidth(300);
         Font font = new Font(19);
         text.setFont(font);
@@ -55,12 +55,38 @@ class QuitMenu extends VBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the top of the Quit Menu screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
+ */
+class QuitMenuHeader extends HBox {
+
+    /**
+     * (Write a succinct description of this method here.)
+     *
+     * @param (parameter name) (Describe the first parameter here)
+     * @param (parameter name) (Do the same for each additional parameter)
+     * @return (description of the return value)
+     */
+    QuitMenuHeader() {
+        this.setStyle("-fx-background-color: #F0F8FF;");
+
+        Text titleText = new Text("Quit Menu");
+
+        this.getChildren().addAll(titleText);
+        this.setAlignment(Pos.CENTER);
+    }
+}
+
+/**
+ * This class contains the components at the bottom of the Quit Menu screen.
+ * The instance variables are two buttons, which represent yes and no.
+ *
+ * Bugs: N/A
+ *
+ * @author Michael Korelov
  */
 class QuitMenuFooter extends HBox {
     private Button yesButton;
@@ -108,39 +134,14 @@ class QuitMenuFooter extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class combines all the components of the Quit Menu screen. It has 
+ * all the same instance variables as the other classes, but also an 
+ * additional one for each individual component of the screen. There is 
+ * also an additional one that keeps track of the previous screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
- */
-class QuitMenuHeader extends HBox {
-
-    /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
-     */
-    QuitMenuHeader() {
-        this.setStyle("-fx-background-color: #F0F8FF;");
-
-        Text titleText = new Text("Quit Menu");
-
-        this.getChildren().addAll(titleText);
-        this.setAlignment(Pos.CENTER);
-    }
-}
-
-/**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
- *
- * Bugs: (a list of bugs and other problems)
- *
- * @author (your name)
+ * @author Michael Korelov
  */
 class QuitMenuFrame extends BorderPane {
     private QuitMenu menu;

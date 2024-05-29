@@ -29,12 +29,12 @@ import javafx.scene.image.ImageView;
 import java.io.File;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components in the center of the Game Board screen.
+ * The instance variables are 9 buttons that are organized in a 3x3 grid.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class GameBoard extends VBox {
     private GridPane board;
@@ -226,12 +226,12 @@ class GameBoard extends VBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the top of the Game Board screen.
+ * The only instance variable is a button that will cause the game to pause.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class GameBoardHeader extends HBox {
     private Button pauseButton;
@@ -247,7 +247,8 @@ class GameBoardHeader extends HBox {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
-        Image image = new Image(new File("src/pausebutton.png").toURI().toString());
+        String path = "src/pausebutton.png";
+        Image image = new Image(new File(path).toURI().toString());
         ImageView imageView = new ImageView(image);
 
         imageView.setFitWidth(20);
@@ -279,12 +280,11 @@ class GameBoardHeader extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class contains the components at the bottom of the Game Board screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class GameBoardFooter extends HBox {
 
@@ -309,12 +309,14 @@ class GameBoardFooter extends HBox {
 }
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy.)
+ * This class combines all the components of the Game Board screen. It has
+ * all the same instance variables as the other classes, but also an 
+ * additional one for the game logic and each individual component of the 
+ * screen.
  *
- * Bugs: (a list of bugs and other problems)
+ * Bugs: N/A
  *
- * @author (your name)
+ * @author Michael Korelov
  */
 class GameBoardFrame extends BorderPane {
     private GameBoardHeader header;
