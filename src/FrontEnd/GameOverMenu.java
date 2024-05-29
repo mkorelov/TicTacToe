@@ -35,6 +35,14 @@ import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class GameOverMenu extends VBox{
     GameOverMenu(int n) {
         this.setPrefSize(300, 50);
@@ -54,6 +62,14 @@ class GameOverMenu extends VBox{
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class GameOverHeader extends HBox {
     GameOverHeader() {
         this.setPrefSize(300, 50);
@@ -65,6 +81,14 @@ class GameOverHeader extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class GameOverFooter extends HBox{
     private Button playButton;
     private Button backButton;
@@ -89,6 +113,14 @@ class GameOverFooter extends HBox{
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class GameOverFrame extends BorderPane {
     private GameOverMenu menu;
     private GameOverHeader header;

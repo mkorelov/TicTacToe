@@ -35,6 +35,14 @@ import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class QuitMenu extends VBox {
     QuitMenu() {
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -49,6 +57,14 @@ class QuitMenu extends VBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class QuitMenuFooter extends HBox {
     private Button yesButton;
     private Button noButton;
@@ -73,6 +89,14 @@ class QuitMenuFooter extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class QuitMenuHeader extends HBox {
     QuitMenuHeader() {
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -84,6 +108,14 @@ class QuitMenuHeader extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class QuitMenuFrame extends BorderPane {
     private QuitMenu menu;
     private QuitMenuFooter footer;

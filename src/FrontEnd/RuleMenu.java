@@ -34,6 +34,14 @@ import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class RuleMenu extends VBox {
     RuleMenu() {
         this.setPrefSize(300, 50);
@@ -60,6 +68,14 @@ class RuleMenu extends VBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class RuleMenuHeader extends HBox {
     RuleMenuHeader() {
         this.setPrefSize(300, 50);
@@ -71,6 +87,14 @@ class RuleMenuHeader extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class RuleMenuFooter extends HBox {
     private Button backButton;
 
@@ -89,6 +113,14 @@ class RuleMenuFooter extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class RuleMenuFrame extends BorderPane {
     private RuleMenuHeader header;
     private RuleMenuFooter footer;

@@ -39,6 +39,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.io.File;
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class GameBoard extends VBox {
     private GridPane board;
 
@@ -158,6 +166,14 @@ class GameBoard extends VBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class GameBoardHeader extends HBox {
     private Button pauseButton;
 
@@ -189,6 +205,14 @@ class GameBoardHeader extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class GameBoardFooter extends HBox {
     GameBoardFooter() {
         this.setPrefSize(800, 50);
@@ -203,6 +227,14 @@ class GameBoardFooter extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class GameBoardFrame extends BorderPane {
     private GameBoardHeader header;
     private GameBoardFooter footer;

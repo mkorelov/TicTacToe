@@ -39,6 +39,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.io.File;
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class MainMenu extends VBox {
     private Button startButton;
     private Button ruleButton;
@@ -78,6 +86,14 @@ class MainMenu extends VBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class MainMenuHeader extends HBox {
     MainMenuHeader() {
         this.setPrefSize(800, 50);
@@ -89,6 +105,14 @@ class MainMenuHeader extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class MainMenuFooter extends HBox {
     MainMenuFooter() {
         this.setPrefSize(800, 50);
@@ -100,6 +124,14 @@ class MainMenuFooter extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class MainMenuFrame extends BorderPane {
     private MainMenuHeader header;
     private MainMenuFooter footer;

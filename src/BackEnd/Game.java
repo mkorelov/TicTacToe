@@ -26,6 +26,14 @@
 
 package BackEnd;
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 public class Game {
     private int[] arr;
     private int turn;   // 0 : X and 1 : O

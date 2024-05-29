@@ -35,6 +35,14 @@ import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.scene.text.*;
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class PauseMenu extends VBox {
     private Button backButton;
     private Button quitButton;
@@ -74,6 +82,14 @@ class PauseMenu extends VBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class PauseMenuHeader extends HBox {
     PauseMenuHeader() {
         this.setPrefSize(300, 50);
@@ -85,6 +101,14 @@ class PauseMenuHeader extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class PauseMenuFooter extends HBox {
     PauseMenuFooter() {
         this.setPrefSize(300, 50);
@@ -96,6 +120,14 @@ class PauseMenuFooter extends HBox {
     }
 }
 
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy.)
+ *
+ * Bugs: (a list of bugs and other problems)
+ *
+ * @author (your name)
+ */
 class PauseMenuFrame extends BorderPane {
     private PauseMenuHeader header;
     private PauseMenuFooter footer;
