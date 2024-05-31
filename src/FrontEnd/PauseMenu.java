@@ -188,7 +188,8 @@ class PauseMenuFrame extends BorderPane {
 
     /**
      * Performs a response after a button is clicked on the Pause Menu
-     * screen.
+     * screen. The back button takes you back to the game. The quit button
+     * takes you to the quit menu. The rules button opens the rule menu.
      */
     void addListeners() {
         backButton.setOnAction(e -> {

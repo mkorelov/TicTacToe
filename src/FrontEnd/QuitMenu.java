@@ -34,7 +34,8 @@ import javafx.scene.text.*;
 class QuitMenu extends VBox {
 
     /**
-     * The default constructor of the center component of the Quit Menu screen.
+     * The default constructor of the center component of the Quit Menu 
+     * screen.
      */
     QuitMenu() {
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -164,8 +165,8 @@ class QuitMenuFrame extends BorderPane {
     }
 
     /**
-     * Performs a response after a button is clicked on the Quit Menu
-     * screen.
+     * Performs a response after a button is clicked on the Quit Menu screen.
+     * Yes button opens the main menu and no button returns to the pause menu.
      */
     void addListeners() {
         yesButton.setOnAction(e -> {

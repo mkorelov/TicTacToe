@@ -43,16 +43,20 @@ class RuleMenu extends VBox {
         titleText.setWrappingWidth(300);
         titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
 
-        Text firstRule = new Text("1. Two Players take turns selecting a square and marking it with their symbol (X/O).");
+        Text firstRule = new Text("1. Two Players take turns selecting a " +
+        "square and marking it with their symbol (X/O).");
         firstRule.setWrappingWidth(300);
         Font font = new Font(19);
         firstRule.setFont(font);
 
-        Text secondRule = new Text("2.The first Player to get three boxes in a row wins the game. This can be achieved vertically, horizontally, or diagonally.");
+        Text secondRule = new Text("2.The first Player to get three boxes in " + 
+        "a row wins the game. This can be achieved vertically, horizontally, " +
+        "or diagonally.");
         secondRule.setWrappingWidth(300);
         secondRule.setFont(font);
 
-        Text thirdRule = new Text("3. If all the boxes are full and there is no winner, the game ends in a draw.");
+        Text thirdRule = new Text("3. If all the boxes are full and there is " +
+        "no winner, the game ends in a draw.");
         thirdRule.setWrappingWidth(300);
         thirdRule.setFont(font);
 
@@ -153,7 +157,7 @@ class RuleMenuFrame extends BorderPane {
 
     /**
      * Performs a response after a button is clicked on the Rule Menu
-     * screen.
+     * screen. The back button closes the rule menu.
      */
     void addListeners() {
         backButton.setOnAction(e -> {

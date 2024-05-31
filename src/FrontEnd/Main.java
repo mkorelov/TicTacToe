@@ -48,7 +48,7 @@ public class Main extends Application {
     /**
      * This is the main method that runs the application.
      *
-     * @param String[] args Array that holds any argument passed in.
+     * @param String[] args The array that holds any argument passed in.
      */
     public static void main(String[] args) {
         launch(args);

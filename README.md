@@ -20,7 +20,6 @@ Version 3 Features:
 - Improve UI and UX (Done)
 - Add are you sure you want to quit? Menu (Done)
 
-
 Potential Future Updates:
 
 Version 4 Features:
@@ -46,7 +45,7 @@ Features:
 2. Game Logic
 2. Pause Menu (Restart, End Game)
 
-## Troubleshooting
+## Troubleshooting Tips
 1. Preferably use VS Code on a Apple Silicon Macbook.
 2. Check to see if you have java installed on your device by running the    command 'java --version' in your terminal (without the '').
 3. If your java version is less than 13 or you get the error message "No Java Runtime Present", download the correct version of Java for your device from https://www.oracle.com/java/technologies/downloads/.

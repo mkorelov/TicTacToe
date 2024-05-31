@@ -174,7 +174,8 @@ class MainMenuFrame extends BorderPane {
 
     /**
      * Performs a response after a button is clicked on the Main Menu
-     * screen.
+     * screen. Start button starts a new game and rule buttons opens
+     * a new menu that displays the rules of tic tac toe.
      */
     void addListeners() {
         startButton.setOnAction(e -> {

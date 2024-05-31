@@ -28,15 +28,17 @@ package BackEnd;
  */
 public class Game {
     private int[] arr;
-    private int turn;   // 0 : X and 1 : O
+    private int turn;       // 0 = X, 1 = O
     private int moves;
-    private int winner; // 0 : X and 1 : O and -1 : draw
+    private int winner;     // 0 = X, 1 = O, -1 = draw
+    private static final int GRIDSIZE = 9;
+    private static final int ALTERNATETURNS = 2;
 
     /**
      * The default constructor which initializes the logic of the game.
      */
     public Game() {
-        arr = new int[9];
+        arr = new int[GRIDSIZE];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = -1;
         }
@@ -55,7 +57,7 @@ public class Game {
         if (arr[pos] == -1) {
             moves += 1;
             arr[pos] = turn;
-            turn = (turn + 1) % 2;
+            turn = (turn + 1) % ALTERNATETURNS;
             if (arr[pos] == 0) {
                 return "X";
             } if (arr[pos] == 1) {

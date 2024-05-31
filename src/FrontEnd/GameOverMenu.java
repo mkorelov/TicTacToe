@@ -170,7 +170,8 @@ class GameOverFrame extends BorderPane {
 
     /**
      * Performs a response after a button is clicked on the Game Over Menu
-     * screen.
+     * screen. Play button starts a new game and back button takes you back to 
+     * the main menu.
      */
     void addListeners() {
         playButton.setOnAction(e -> {

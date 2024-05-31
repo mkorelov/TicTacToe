@@ -235,7 +235,6 @@ class GameBoardHeader extends HBox {
         pauseButton.setPrefHeight(50);
         pauseButton.setPrefWidth(50);
 
-
         Text titleText = new Text("Tic-Tac-Toe");
         titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
         this.getChildren().addAll(titleText, pauseButton);
@@ -339,6 +338,9 @@ class GameBoardFrame extends BorderPane {
 
     /**
      * Performs a response after a button is clicked on the Game Board screen.
+     * When a button on the grid is clicked it is updated with either a "X" or 
+     * an "O", unless it already has been clicked. There is also a pause button
+     * that will open a new menu when clicked.
      */
     void addListeners() {
         pauseButton.setOnAction(e -> {
