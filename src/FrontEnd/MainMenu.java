@@ -42,11 +42,8 @@ class MainMenu extends VBox {
     private Button ruleButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the center component of the Main Menu 
+     * screen.
      */
     MainMenu() {
         this.setPrefSize(800, 750);
@@ -76,22 +73,20 @@ class MainMenu extends VBox {
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the start button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the start button from the center of the Main Menu 
+     * screen.
      */
     Button getStartButton() {
         return this.startButton;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the rule button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the rule button from the center of the Main Menu 
+     * screen.
      */
     Button getRuleButton() {
         return this.ruleButton;
@@ -108,11 +103,7 @@ class MainMenu extends VBox {
 class MainMenuHeader extends HBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the top component of the Main Menu screen.
      */
     MainMenuHeader() {
         this.setPrefSize(800, 50);
@@ -134,11 +125,7 @@ class MainMenuHeader extends HBox {
 class MainMenuFooter extends HBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the bottom component of the Main Menu screen.
      */
     MainMenuFooter() {
         this.setPrefSize(800, 50);
@@ -168,11 +155,7 @@ class MainMenuFrame extends BorderPane {
     private Button ruleButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the entire Game Over Menu screen.
      */
     MainMenuFrame() {
         header = new MainMenuHeader();
@@ -190,11 +173,8 @@ class MainMenuFrame extends BorderPane {
     }
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * Performs a response after a button is clicked on the Main Menu
+     * screen.
      */
     void addListeners() {
         startButton.setOnAction(e -> {

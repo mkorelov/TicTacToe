@@ -31,11 +31,10 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     /**
-     * (Write a succinct description of this method here.)
+     * Method that displays the initial screen for the app.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @param Stage primaryStage The app's display that will be populated
+     * with the Main Menu.
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -47,11 +46,9 @@ public class Main extends Application {
     }
     
     /**
-     * (Write a succinct description of this method here.)
+     * This is the main method that runs the application.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @param String[] args Array that holds any argument passed in.
      */
     public static void main(String[] args) {
         launch(args);

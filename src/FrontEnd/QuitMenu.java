@@ -34,11 +34,7 @@ import javafx.scene.text.*;
 class QuitMenu extends VBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the center component of the Quit Menu screen.
      */
     QuitMenu() {
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -64,11 +60,7 @@ class QuitMenu extends VBox {
 class QuitMenuHeader extends HBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the top component of the Quit Menu screen.
      */
     QuitMenuHeader() {
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -93,11 +85,8 @@ class QuitMenuFooter extends HBox {
     private Button noButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the bottom component of the Quit Menu 
+     * screen.
      */
     QuitMenuFooter() {
         this.setStyle("-fx-background-color: #F0F8FF;");
@@ -111,22 +100,20 @@ class QuitMenuFooter extends HBox {
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the yes button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the yes button from the bottom of the Quit Menu 
+     * screen.
      */
     Button getYesButton() {
         return this.yesButton;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the no button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the no button from the bottom of the Quit Menu 
+     * screen.
      */
     Button getNoButton() {
         return this.noButton;
@@ -154,11 +141,10 @@ class QuitMenuFrame extends BorderPane {
     private Stage oldStage;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The constructor of the entire Quit Menu screen.
+     * 
+     * @param Stage stage The app's display that will be populated
+     * with another screen.
      */
     QuitMenuFrame(Stage stage) {
         menu = new QuitMenu();
@@ -178,11 +164,8 @@ class QuitMenuFrame extends BorderPane {
     }
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * Performs a response after a button is clicked on the Quit Menu
+     * screen.
      */
     void addListeners() {
         yesButton.setOnAction(e -> {

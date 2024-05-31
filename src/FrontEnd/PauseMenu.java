@@ -40,11 +40,8 @@ class PauseMenu extends VBox {
     private Button ruleButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the center component of the Pause Menu 
+     * screen.
      */
     PauseMenu() {
         this.setPrefSize(300, 200);
@@ -68,33 +65,30 @@ class PauseMenu extends VBox {
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the back button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the back button from the center of the Pause Menu 
+     * screen.
      */
     Button getBackButton() {
         return this.backButton;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the quit button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the quit button from the center of the Pause Menu 
+     * screen.
      */
     Button getQuitButton() {
         return this.quitButton;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the rule button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the rule button from the center of the Pause Menu 
+     * screen.
      */
     Button getRuleButton() {
         return this.ruleButton;
@@ -111,11 +105,7 @@ class PauseMenu extends VBox {
 class PauseMenuHeader extends HBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the top component of the Pause Menu screen.
      */
     PauseMenuHeader() {
         this.setPrefSize(300, 50);
@@ -128,7 +118,8 @@ class PauseMenuHeader extends HBox {
 }
 
 /**
- * This class contains the components at the bottom of the Pause Menu screen.
+ * This class contains the components at the bottom of the Pause Menu 
+ * screen.
  *
  * Bugs: N/A
  *
@@ -137,11 +128,8 @@ class PauseMenuHeader extends HBox {
 class PauseMenuFooter extends HBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the bottom component of the Pause Menu 
+     * screen.
      */
     PauseMenuFooter() {
         this.setPrefSize(300, 50);
@@ -175,11 +163,10 @@ class PauseMenuFrame extends BorderPane {
     private Button ruleButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The constructor of the entire Pause Menu screen.
+     * 
+     * @param Stage stage The app's display that will be populated
+     * with another screen.
      */
     PauseMenuFrame(Stage stage) {
         header = new PauseMenuHeader();
@@ -200,11 +187,8 @@ class PauseMenuFrame extends BorderPane {
     }
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * Performs a response after a button is clicked on the Pause Menu
+     * screen.
      */
     void addListeners() {
         backButton.setOnAction(e -> {

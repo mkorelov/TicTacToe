@@ -33,11 +33,7 @@ public class Game {
     private int winner; // 0 : X and 1 : O and -1 : draw
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor which initializes the logic of the game.
      */
     public Game() {
         arr = new int[9];
@@ -50,11 +46,10 @@ public class Game {
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Marks the grid with the most recent player's selection.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @param int pos The box in the grid that was clicke on.
+     * @return Returns which symbol was used. "X", "O", or "".
      */
     public String move(int pos) {
         if (arr[pos] == -1) {
@@ -71,22 +66,21 @@ public class Game {
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * A getter method that determines the winner.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns which player won the game, where 0 = X, 1 = O and 
+     * -1 = draw.
+
      */
     public int getWinner() {
         return this.winner;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Checks to see if their is a winner or no more moves left to make.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns true if a player won or all 9 squares are full. Else
+     * returns false.
      */
     public boolean gameOver() {
         // if all blocks are full

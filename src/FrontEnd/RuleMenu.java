@@ -33,11 +33,7 @@ import javafx.scene.text.*;
 class RuleMenu extends VBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the center component of the Rule Menu screen.
      */
     RuleMenu() {
         this.setPrefSize(300, 50);
@@ -74,11 +70,7 @@ class RuleMenu extends VBox {
 class RuleMenuHeader extends HBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the top component of the Rule Menu screen.
      */
     RuleMenuHeader() {
         this.setPrefSize(300, 50);
@@ -102,11 +94,8 @@ class RuleMenuFooter extends HBox {
     private Button backButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the bottom component of the Rule Menu 
+     * screen.
      */
     RuleMenuFooter() {
         this.setPrefSize(300, 200);
@@ -119,11 +108,10 @@ class RuleMenuFooter extends HBox {
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the back button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the back button from the bottom of the Rule Menu 
+     * screen.
      */
     Button getBackButton() {
         return this.backButton;
@@ -147,11 +135,7 @@ class RuleMenuFrame extends BorderPane {
     private Button backButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the entire Quit Menu screen.
      */
     RuleMenuFrame() {
         header = new RuleMenuHeader();
@@ -168,11 +152,8 @@ class RuleMenuFrame extends BorderPane {
     }  
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * Performs a response after a button is clicked on the Rule Menu
+     * screen.
      */
     void addListeners() {
         backButton.setOnAction(e -> {

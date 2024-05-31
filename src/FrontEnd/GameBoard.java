@@ -52,11 +52,8 @@ class GameBoard extends VBox {
     private Button rb;  // right bottom box
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the center component of the Game Board 
+     * screen.
      */
     GameBoard() {
         this.setPrefSize(800, 750);
@@ -126,99 +123,81 @@ class GameBoard extends VBox {
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the top left button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the top left button from the grid.
      */
     Button getLTButton() {
         return this.lt;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the top middle button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the top middle button from the grid.
      */
     Button getMTButton() {
         return this.mt;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the top right button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the top right button from the grid.
      */
     Button getRTButton() {
         return this.rt;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the middle left button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the middle left button from the grid.
      */
     Button getLMButton() {
         return this.lm;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the center button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the center button from the grid.
      */
     Button getMMButton() {
         return this.mm;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the middle right button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the middle right button from the grid.
      */
     Button getRMButton() {
         return this.rm;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the bottom left button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the bottom left button from the grid.
      */
     Button getLBButton() {
         return this.lb;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the bottom middle button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the bottom middle button from the grid.
      */
     Button getMBButton() {
         return this.mb;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the bottom right button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the bottom right button from the grid.
      */
     Button getRBButton() {
         return this.rb;
@@ -237,11 +216,8 @@ class GameBoardHeader extends HBox {
     private Button pauseButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the top component of the Game Board 
+     * screen.
      */
     GameBoardHeader() {
         this.setPrefSize(800, 50);
@@ -268,11 +244,9 @@ class GameBoardHeader extends HBox {
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the pause button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the pause button from the top of the Game Board screen.
      */
     Button getPauseButton() {
         return this.pauseButton;
@@ -289,11 +263,8 @@ class GameBoardHeader extends HBox {
 class GameBoardFooter extends HBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the bottom component of the Game Board 
+     * screen.
      */
     GameBoardFooter() {
         this.setPrefSize(800, 50);
@@ -338,11 +309,7 @@ class GameBoardFrame extends BorderPane {
     private Button rb;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the entire Game Board screen.
      */
     GameBoardFrame() {
         header = new GameBoardHeader();
@@ -371,11 +338,7 @@ class GameBoardFrame extends BorderPane {
     }
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * Performs a response after a button is clicked on the Game Board screen.
      */
     void addListeners() {
         pauseButton.setOnAction(e -> {

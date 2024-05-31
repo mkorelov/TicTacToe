@@ -35,11 +35,10 @@ import javafx.scene.text.*;
 class GameOverMenu extends VBox{
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The constructor of the center component of the Game Over Menu 
+     * screen.
+     * 
+     * @param int n Determines which mesage to display based on winner.
      */
     GameOverMenu(int n) {
         this.setPrefSize(300, 50);
@@ -70,11 +69,8 @@ class GameOverMenu extends VBox{
 class GameOverHeader extends HBox {
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the top component of the Game Over Menu 
+     * screen.
      */
     GameOverHeader() {
         this.setPrefSize(300, 50);
@@ -100,11 +96,8 @@ class GameOverFooter extends HBox{
     private Button backButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The default constructor of the bottom component of the Game Over Menu 
+     * screen.
      */
     GameOverFooter() {
         this.setPrefSize(300, 200);
@@ -118,22 +111,20 @@ class GameOverFooter extends HBox{
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the play button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the play button from the bottom of the Game Over Menu 
+     * screen.
      */
     Button getPlayButton() {
         return this.playButton;
     }
 
     /**
-     * (Write a succinct description of this method here.)
+     * Getter method for the back button.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * @return Returns the back button from the bottom of the Game Over Menu 
+     * screen.
      */
     Button getBackButton() {
         return this.backButton;
@@ -158,11 +149,9 @@ class GameOverFrame extends BorderPane {
     private Button backButton;
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * The constructor of the entire Game Over Menu screen.
+     * 
+     * @param int n Informs of the winner of the previous game.
      */
     GameOverFrame(int n) {
         menu = new GameOverMenu(n);
@@ -180,11 +169,8 @@ class GameOverFrame extends BorderPane {
     }
 
     /**
-     * (Write a succinct description of this method here.)
-     *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
-     * @return (description of the return value)
+     * Performs a response after a button is clicked on the Game Over Menu
+     * screen.
      */
     void addListeners() {
         playButton.setOnAction(e -> {
