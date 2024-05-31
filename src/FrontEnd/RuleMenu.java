@@ -39,14 +39,10 @@ class RuleMenu extends VBox {
         this.setPrefSize(300, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
-        Text titleText = new Text("Here are the rules of Tic-Tac-Toe:");
-        titleText.setWrappingWidth(300);
-        titleText.setStyle("-fx-font-weight: bold; -fx-font-size: 20;");
-
         Text firstRule = new Text("1. Two Players take turns selecting a " +
         "square and marking it with their symbol (X/O).");
         firstRule.setWrappingWidth(300);
-        Font font = new Font(19);
+        Font font = new Font(16);
         firstRule.setFont(font);
 
         Text secondRule = new Text("2.The first Player to get three boxes in " + 
@@ -60,7 +56,7 @@ class RuleMenu extends VBox {
         thirdRule.setWrappingWidth(300);
         thirdRule.setFont(font);
 
-        this.getChildren().addAll(titleText, firstRule, secondRule, thirdRule);
+        this.getChildren().addAll(firstRule, secondRule, thirdRule);
     }
 }
 
@@ -107,7 +103,7 @@ class RuleMenuFooter extends HBox {
 
         backButton = new Button("Back");
 
-        this.getChildren().addAll(backButton);
+        this.getChildren().add(backButton);
         this.setAlignment(Pos.CENTER);
     }
 
