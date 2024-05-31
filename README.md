@@ -2,6 +2,7 @@
 
 This is my implementation of Tic-Tac-Toe using Java & JavaFX on a Apple Silicon Macbook.
 
+## Features
 Version 1 Features:
 1. Launching the app opens the Main Menu where you can start a new game (Done)
 2. Implement the game and logic behind it (Done)
@@ -18,6 +19,7 @@ Version 3 Features:
 - Add option to view rules from Pause Menu (Done)
 - Improve UI and UX (Done)
 - Add are you sure you want to quit? Menu (Done)
+
 
 Potential Future Updates:
 
@@ -43,6 +45,14 @@ Features:
 1. UI (Game Board, Tiles, Xs/Os, Title of Game, Player One/Two, Score, etc.)
 2. Game Logic
 2. Pause Menu (Restart, End Game)
+
+## Troubleshooting
+1. Preferably use VS Code on a Apple Silicon Macbook.
+2. Check to see if you have java installed on your device by running the    command 'java --version' in your terminal (without the '').
+3. If your java version is less than 13 or you get the error message "No Java Runtime Present", download the correct version of Java for your device from https://www.oracle.com/java/technologies/downloads/.
+4. Make sure you have the correct version of JavaFX for your device downloaded on your device from https://gluonhq.com/products/javafx/.
+5. Delete all the files in the lib folder of this project and copy over all the files from your newly downloaded JavaFX lib folder into the lib folder of this project.
+6. Update the path in .vscode/launch.json to reflect where your new JavaFX lib folder is located on your computer.
 
 ## Folder Structure
 
