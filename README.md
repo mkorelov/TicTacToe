@@ -2,7 +2,13 @@
 
 This is my implementation of Tic-Tac-Toe using Java & JavaFX on a Apple Silicon Macbook.
 
+## To Do
+1. Decriptive Variable Names (Done)
+2. No Magic Numbers
+3. Inline Comments
+
 ## Features
+
 Version 1 Features:
 1. Launching the app opens the Main Menu where you can start a new game (Done)
 2. Implement the game and logic behind it (Done)
@@ -46,6 +52,7 @@ Features:
 2. Pause Menu (Restart, End Game)
 
 ## Troubleshooting Tips
+
 1. Preferably use VS Code on a Apple Silicon Macbook.
 2. Check to see if you have java installed on your device by running the    command 'java --version' in your terminal (without the '').
 3. If your java version is less than 13 or you get the error message "No Java Runtime Present", download the correct version of Java for your device from https://www.oracle.com/java/technologies/downloads/.

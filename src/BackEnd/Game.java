@@ -27,7 +27,7 @@ package BackEnd;
  * @author Michael Korelov
  */
 public class Game {
-    private int[] arr;
+    private int[] board;
     private int turn;       // 0 = X, 1 = O
     private int moves;
     private int winner;     // 0 = X, 1 = O, -1 = draw
@@ -38,9 +38,9 @@ public class Game {
      * The default constructor which initializes the logic of the game.
      */
     public Game() {
-        arr = new int[GRIDSIZE];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = -1;
+        board = new int[GRIDSIZE];
+        for (int i = 0; i < board.length; i++) {
+            board[i] = -1;
         }
         turn = 0;
         moves = 0;
@@ -54,13 +54,13 @@ public class Game {
      * @return Returns which symbol was used. "X", "O", or "".
      */
     public String move(int pos) {
-        if (arr[pos] == -1) {
+        if (board[pos] == -1) {
             moves += 1;
-            arr[pos] = turn;
+            board[pos] = turn;
             turn = (turn + 1) % ALTERNATETURNS;
-            if (arr[pos] == 0) {
+            if (board[pos] == 0) {
                 return "X";
-            } if (arr[pos] == 1) {
+            } if (board[pos] == 1) {
                 return "O";
             }
         }
@@ -92,77 +92,77 @@ public class Game {
         }
 
         // if player 1 (X) wins horizontally
-        if (arr[0] == 0 && arr[1] == 0 && arr[2] == 0) {
+        if (board[0] == 0 && board[1] == 0 && board[2] == 0) {
             winner = 0;
             return true;
         }
-        if (arr[3] == 0 && arr[4] == 0 && arr[5] == 0) {
+        if (board[3] == 0 && board[4] == 0 && board[5] == 0) {
             winner = 0;
             return true;
         }
-        if (arr[6] == 0 && arr[7] == 0 && arr[8] == 0) {
+        if (board[6] == 0 && board[7] == 0 && board[8] == 0) {
             winner = 0;
             return true;
         }
 
         // if player 2 (O) wins horizontally
-        if (arr[0] == 1 && arr[1] == 1 && arr[2] == 1) {
+        if (board[0] == 1 && board[1] == 1 && board[2] == 1) {
             winner = 1;
             return true;
         }
-        if (arr[3] == 1 && arr[4] == 1 && arr[5] == 1) {
+        if (board[3] == 1 && board[4] == 1 && board[5] == 1) {
             winner = 1;
             return true;
         }
-        if (arr[6] == 1 && arr[7] == 1 && arr[8] == 1) {
+        if (board[6] == 1 && board[7] == 1 && board[8] == 1) {
             winner = 1;
             return true;
         }
 
         // if player 1 (X) wins vertically
-        if (arr[0] == 0 && arr[3] == 0 && arr[6] == 0) {
+        if (board[0] == 0 && board[3] == 0 && board[6] == 0) {
             winner = 0;
             return true;
         }
-        if (arr[1] == 0 && arr[4] == 0 && arr[7] == 0) {
+        if (board[1] == 0 && board[4] == 0 && board[7] == 0) {
             winner = 0;
             return true;
         }
-        if (arr[2] == 0 && arr[5] == 0 && arr[8] == 0) {
+        if (board[2] == 0 && board[5] == 0 && board[8] == 0) {
             winner = 0;
             return true;
         }
 
         // if player 2 (O) wins vertically
-        if (arr[0] == 1 && arr[3] == 1 && arr[6] == 1) {
+        if (board[0] == 1 && board[3] == 1 && board[6] == 1) {
             winner = 1;
             return true;
         }
-        if (arr[1] == 1 && arr[4] == 1 && arr[7] == 1) {
+        if (board[1] == 1 && board[4] == 1 && board[7] == 1) {
             winner = 1;
             return true;
         }
-        if (arr[2] == 1 && arr[5] == 1 && arr[8] == 1) {
+        if (board[2] == 1 && board[5] == 1 && board[8] == 1) {
             winner = 1;
             return true;
         }
 
         // if player 1 (X) wins diagonally
-        if (arr[0] == 0 && arr[4] == 0 && arr[8] == 0) {
+        if (board[0] == 0 && board[4] == 0 && board[8] == 0) {
             winner = 0;
             return true;
         }
-        if (arr[2] == 0 && arr[4] == 0 && arr[6] == 0) {
+        if (board[2] == 0 && board[4] == 0 && board[6] == 0) {
             winner = 0;
             return true;
         }
 
         // if player 2 (O) wins diagonally
-        if (arr[0] == 1 && arr[4] == 1 && arr[8] == 1) {
+        if (board[0] == 1 && board[4] == 1 && board[8] == 1) {
             winner = 1;
             return true;
         }
-        if (arr[2] == 1 && arr[4] == 1 && arr[6] == 1) {
+        if (board[2] == 1 && board[4] == 1 && board[6] == 1) {
             winner = 1;
             return true;
         }
