@@ -86,7 +86,7 @@ public class Game {
      */
     public boolean gameOver() {
         // if all blocks are full
-        if (moves == 9) {
+        if (moves == GRIDSIZE) {
             winner = -1;
             return true;
         }
