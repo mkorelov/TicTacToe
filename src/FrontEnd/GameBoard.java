@@ -95,6 +95,7 @@ class GameBoard extends VBox {
         rb.setPrefHeight(100);
         rb.setPrefWidth(100);
 
+        // creates game board with 9 buttons organize in a 3x3 grid
         board = new GridPane();
         board.getColumnConstraints().add(new ColumnConstraints(100));
         board.getColumnConstraints().add(new ColumnConstraints(100));
@@ -223,6 +224,7 @@ class GameBoardHeader extends HBox {
         this.setPrefSize(800, 50);
         this.setStyle("-fx-background-color: #F0F8FF;");
 
+        // creates a button with an uploaded image instead of text
         String path = "src/pausebutton.png";
         Image image = new Image(new File(path).toURI().toString());
         ImageView imageView = new ImageView(image);

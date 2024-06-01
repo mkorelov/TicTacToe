@@ -49,6 +49,7 @@ class MainMenu extends VBox {
         this.setPrefSize(800, 750);
         this.setStyle("-fx-background-color: #F0F8FF;");
         
+        // creates a button with an uploaded image instead of text
         String path = "src/playbutton.png";
         Image image = new Image(new File(path).toURI().toString());
         ImageView imageView = new ImageView(image);

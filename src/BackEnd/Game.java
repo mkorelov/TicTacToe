@@ -57,6 +57,8 @@ public class Game {
         if (board[pos] == -1) {
             moves += 1;
             board[pos] = turn;
+            
+            // alternates turns between X and O
             turn = (turn + 1) % ALTERNATETURNS;
             if (board[pos] == 0) {
                 return "X";

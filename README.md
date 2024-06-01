@@ -2,11 +2,6 @@
 
 This is my implementation of Tic-Tac-Toe using Java & JavaFX on a Apple Silicon Macbook.
 
-## To Do
-1. Decriptive Variable Names (Done)
-2. No Magic Numbers (Done)
-3. Inline Comments
-
 ## Features
 
 Version 1 Features:
