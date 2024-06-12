@@ -2,6 +2,20 @@
 
 This is my implementation of Tic-Tac-Toe using Java & JavaFX on a Apple Silicon Macbook.
 
+![main menu](MainMenu_Screenshot.png)
+
+![rule menu](RuleMenu_Screenshot.png)
+
+![game board](GameBoard_Screenshot1.png)
+
+![pause menu](PauseMenu_Screenshot.png)
+
+![quit menu](QuitMenu_Screenshot.png)
+
+![game board 2](GameBoard_Screenshot2.png)
+
+![game over](GameOverMenu_Screenshot.png)
+
 ## Features
 
 Version 1 Features:
